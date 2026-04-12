@@ -7,6 +7,14 @@
   <meta name="description" content="Puente makes invisible people visible. One tap. Your story. Be seen." />
   <meta property="og:title" content="Puente" />
   <meta property="og:description" content="Every person has a story worth knowing. A ring that makes sure it gets heard." />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -289,35 +297,19 @@
       align-items: center;
       position: relative;
       overflow: hidden;
-      perspective: 1000px;
     }
 
-    .ring-3d {
-      width: 75%;
-      max-width: 340px;
-      animation: ringFloat 6s ease-in-out infinite;
-      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
-      transition: transform 0.3s ease;
+    .ring-canvas {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: grab;
     }
 
-    .ring-image:hover .ring-3d {
-      animation-play-state: paused;
-      transform: rotateY(-15deg) rotateX(5deg) scale(1.05);
-    }
-
-    @keyframes ringFloat {
-      0%, 100% {
-        transform: rotateY(0deg) rotateX(0deg) translateY(0px);
-      }
-      25% {
-        transform: rotateY(8deg) rotateX(3deg) translateY(-8px);
-      }
-      50% {
-        transform: rotateY(-5deg) rotateX(-2deg) translateY(-4px);
-      }
-      75% {
-        transform: rotateY(-8deg) rotateX(2deg) translateY(-10px);
-      }
+    .ring-canvas:active {
+      cursor: grabbing;
     }
 
     .ring-tag {
@@ -987,8 +979,8 @@
   <!-- THE RING -->
   <section class="ring-section reveal">
     <div class="ring-container">
-      <div class="ring-image">
-        <img src="ring.png" alt="Puente Ring - Black Zirconia Ceramic" class="ring-3d" />
+      <div class="ring-image" id="ring-viewer">
+        <canvas class="ring-canvas" id="ring-canvas"></canvas>
         <span class="ring-tag">Zirconia Ceramic / Black</span>
       </div>
       <div class="ring-info">
@@ -1212,6 +1204,113 @@
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     reveals.forEach(el => observer.observe(el));
+  </script>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    const canvas = document.getElementById('ring-canvas');
+    const container = document.getElementById('ring-viewer');
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xF3EDE6);
+
+    const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+    camera.position.set(0, 1.5, 4);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      antialias: true,
+      alpha: true
+    });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+
+    function resize() {
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    scene.add(ambientLight);
+
+    const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
+    keyLight.position.set(3, 5, 4);
+    scene.add(keyLight);
+
+    const fillLight = new THREE.DirectionalLight(0xF5E6D3, 0.6);
+    fillLight.position.set(-3, 2, -2);
+    scene.add(fillLight);
+
+    const rimLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    rimLight.position.set(0, -2, -4);
+    scene.add(rimLight);
+
+    // Controls - drag to spin
+    const controls = new OrbitControls(camera, canvas);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.enableZoom = false;
+    controls.enablePan = false;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 2.5;
+
+    // Load the ring
+    let ringModel = null;
+    const loader = new GLTFLoader();
+    loader.load('ring.glb', (gltf) => {
+      ringModel = gltf.scene;
+
+      // Center the model
+      const box = new THREE.Box3().setFromObject(ringModel);
+      const center = box.getCenter(new THREE.Vector3());
+      const size = box.getSize(new THREE.Vector3());
+      const maxDim = Math.max(size.x, size.y, size.z);
+      const scale = 2 / maxDim;
+      ringModel.scale.setScalar(scale);
+      ringModel.position.sub(center.multiplyScalar(scale));
+
+      // Apply black ceramic material to all meshes
+      ringModel.traverse((child) => {
+        if (child.isMesh) {
+          child.material = new THREE.MeshPhysicalMaterial({
+            color: 0x1A1714,
+            metalness: 0.15,
+            roughness: 0.2,
+            clearcoat: 0.8,
+            clearcoatRoughness: 0.15,
+            reflectivity: 0.5,
+            envMapIntensity: 1.0,
+          });
+        }
+      });
+
+      scene.add(ringModel);
+    });
+
+    // Floating animation
+    let time = 0;
+    function animate() {
+      requestAnimationFrame(animate);
+      time += 0.01;
+
+      if (ringModel) {
+        ringModel.position.y = Math.sin(time * 1.5) * 0.08;
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
   </script>
 
 </body>
