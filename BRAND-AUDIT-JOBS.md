@@ -77,3 +77,32 @@ Promise: When you wear this ring, your story will be heard
 - Visibility
 - Bridge
 - Connection
+
+## Product Flow (The Moment)
+
+1. You wear the ring. You tap it on someone's phone.
+2. Your profile opens - your name, where you're from, your story in your voice, in their language.
+3. They see a button: "Connect with [your name]"
+4. They enter: first name, email, phone.
+5. AI instantly cross-references everything to find what connects you. Same hometown. Same interests. Kids at the same school. Same church.
+6. Both of you see the connection - what you share, why you should talk.
+7. The app shows your visibility map over time - every person who now knows your story.
+
+The magic is at steps 5 and 6. That is the demo. That is the Macintosh moment.
+
+## Networking vs Visibility
+
+Puente is NOT a networking tool. Networking is transactional - what can this person do for me? Puente is about being seen for who you ARE, not what you can DO for someone. The janitor doesn't need to network. He needs to be visible.
+
+The network effect happens naturally. When someone taps your ring and sees "you're both from Ecuador, you both play soccer" - they tell their friends. Not because of gamification. Because the experience changed how they see their neighbor.
+
+Don't engineer the network effect. Engineer the moment. The network effect follows.
+
+## Website Voice
+
+The website speaks TO the invisible person, not ABOUT them. Second person, not third person.
+
+Wrong: "Someone you know has a story"
+Right: "You have a story nobody around you knows"
+
+The buyer IS the invisible person. The website should be the first time someone says to them: I see you. Your story matters.
