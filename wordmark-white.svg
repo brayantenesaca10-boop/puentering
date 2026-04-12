@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;display=swap');
+    </style>
+  </defs>
+  <text
+    x="200"
+    y="58"
+    text-anchor="middle"
+    font-family="'Instrument Serif', Georgia, serif"
+    font-size="56"
+    font-weight="400"
+    fill="#F5F0EB"
+    letter-spacing="2"
+  >Puente</text>
+  <!-- Bridge arc connecting u and e -->
+  <path
+    d="M 120,38 Q 148,18 176,38"
+    fill="none"
+    stroke="#B05C2F"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>

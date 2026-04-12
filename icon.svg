@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="120" height="120" rx="24" fill="#1A1714"/>
+  <!-- P letter -->
+  <text
+    x="60"
+    y="78"
+    text-anchor="middle"
+    font-family="'Instrument Serif', Georgia, serif"
+    font-size="72"
+    font-weight="400"
+    fill="#F5F0EB"
+  >P</text>
+  <!-- Bridge arc -->
+  <path
+    d="M 38,52 Q 60,30 82,52"
+    fill="none"
+    stroke="#B05C2F"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+</svg>
