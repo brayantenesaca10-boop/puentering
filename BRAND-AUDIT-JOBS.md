@@ -100,9 +100,47 @@ Don't engineer the network effect. Engineer the moment. The network effect follo
 
 ## Website Voice
 
-The website speaks TO the invisible person, not ABOUT them. Second person, not third person.
+The website speaks TO the person, not ABOUT them. Second person, not third person.
 
 Wrong: "Someone you know has a story"
 Right: "You have a story nobody around you knows"
 
-The buyer IS the invisible person. The website should be the first time someone says to them: I see you. Your story matters.
+The buyer IS the person who hasn't been seen. But the energy is CONFIDENCE, not need.
+
+Wrong energy: "Please see me. I'm invisible. I need this ring."
+Right energy: "I know who I am. When you tap this ring, you're going to find out too."
+
+The ring wearer isn't asking for something. They're OFFERING something. That's not need. That's generosity. That's power.
+
+"Be seen" implies you aren't seen and you need help. "Now they'll know" implies you've always known your worth - the ring just lets everyone else in on it.
+
+## Onboarding: Making Story-Telling Fun
+
+Never ask someone to "tell their story." That's a blank page. That's homework. Instead, ask five small, fun questions that BUILD their story:
+
+1. "Say your name and where you're from." (easiest - everyone can do this)
+2. "What do you do that people don't know about?"
+3. "What's the meal that reminds you of home?"
+4. "What could you talk about for an hour without getting bored?"
+5. "What's something people are always surprised to learn about you?"
+
+Each answer is 15 seconds of voice. The app stitches them into a profile. The person never faced a blank page. They answered five easy questions. But the result feels like a story.
+
+The first question is the activation moment. Once they hear their own voice on the profile, they're hooked.
+
+## Strategic Launch: The First 10
+
+Don't give rings to the quietest people. Give them to the most MAGNETIC invisible people - the ones who are already hubs but whose stories are hidden:
+
+- The barber who talks to 40 people a day
+- The church receptionist who greets every family on Sunday
+- The soccer coach who every kid loves
+- The teacher everyone respects but nobody really knows
+
+These people already have reach. They just don't have visibility. When they tap their ring and someone sees their real story, that person tells 10 others. The product sells itself through the experience.
+
+## Growth: Referral Through Experience
+
+Every ring holder gets a unique link. When they tap their ring, the person who experiences it can buy their own ring through that link. No invite codes. No applications. Just: "I tapped someone's ring, it changed how I see them, I want one."
+
+The product IS the marketing. Every tap is a demo and a sales channel.
