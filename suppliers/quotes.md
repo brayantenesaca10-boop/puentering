@@ -62,25 +62,18 @@ Production time: 1 week
 
 ---
 
-## Sample Quote from Yian (April 12, 2026)
+## Samples (Updated Quote - April 12, 2026)
 
-2 pcs NFC ceramic ring with laser engraved logo
-EXW cost: $35 (for both rings)
+| Item | Cost |
+|---|---|
+| Per sample ring (no logo) | $10 |
+| 2 samples | $20 |
+| Express shipping (3-8 biz days) | $38 |
+| Standard shipping (7-12 biz days) | $18 |
+| **Total (express)** | **$58** |
+| **Total (standard)** | **$38** |
 
-### Shipping Options
-
-| Option | Cost | Delivery | Total |
-|---|---|---|---|
-| Express (DHL/FedEx) | $52 | 5-6 working days | $87 |
-| Small parcel (DDP) | $35 | 9-11 working days | $70 |
-
-DDP = Delivered Duty Paid (no surprise customs fees on arrival)
-
-### Decision
-
-Go with small parcel (DDP) at $70 total. Saves $17, only 4-5 days slower. No rush on samples - the web app build runs in parallel. Rings arrive around April 25 either way, well before the May 10 strategic 10 launch.
-
-Status: READY TO ORDER SAMPLES
+Production time: 1 week
 
 ---
 
@@ -110,6 +103,28 @@ Production time: 25 days + 5 working days shipping = ~30 days total
 
 ---
 
+## Quote 3: Nico (Unknown Company)
+
+Contact: Nico
+Source: TBD
+Date: April 12, 2026
+
+### Samples Only (no full order quote yet)
+
+| Item | Cost |
+|---|---|
+| 2 sample rings (with laser engraving) | $35 |
+| Express shipping (5-6 working days) | $52 |
+| Small parcel DDP (9-11 working days) | $35 |
+| **Total (express)** | **$87** |
+| **Total (DDP)** | **$70** |
+
+Notes: Nico's samples INCLUDE laser engraved logo. No full order quote yet.
+
+Status: NEED FULL ORDER QUOTE (100 pcs, matte black, NTAG216, DDP to US)
+
+---
+
 ## Full Comparison
 
 ### Full Order: 100 Matte Black Rings (DDP to US)
@@ -135,39 +150,34 @@ Virtually identical landed cost ($2 difference). Jarry is slightly faster.
 | Total landed (100 rings) | **$875** |
 | Savings vs matte | $68 less |
 
-### Samples Comparison
+### Samples Comparison (All 3 Suppliers)
 
-| | Yian (Jarry) | Yian (Jarry) |
-|---|---|---|
-| | Express | Standard |
-| 2 sample rings | $20 | $20 |
-| Shipping | $38 | $18 |
-| **Total** | **$58** | **$38** |
-| Delivery | 1 wk + 3-8 days | 1 wk + 7-12 days |
-| Engraving | No | No |
+| | Jarry (standard) | Jarry (express) | Nico (DDP) | Nico (express) |
+|---|---|---|---|---|
+| 2 rings | $20 | $20 | $35 | $35 |
+| Shipping | $18 | $38 | $35 | $52 |
+| **Total** | **$38** | **$58** | **$70** | **$87** |
+| Delivery | 1 wk + 7-12 days | 1 wk + 3-8 days | 9-11 days | 5-6 days |
+| Engraving | No | No | Yes | Yes |
 
-vs. Yian's earlier sample quote (WITH engraving):
-
-| | Express | DDP |
-|---|---|---|
-| 2 sample rings | $35 | $35 |
-| Shipping | $52 | $35 |
-| **Total** | **$87** | **$70** |
-| Delivery | 5-6 days | 9-11 days |
+Sophia: no sample quote (only quoted full order of 100)
 
 ### Verdict
 
-**For samples:** Jarry's updated quote is better. $38 standard or $58 express vs $70-87 from the earlier quote. The samples won't have the logo but that's fine - we're testing finish, NFC range, and comfort, not the engraving.
+**For samples:** Jarry is cheapest at $38. But Nico's samples include laser engraving for $70 (DDP) - you see the finished product, not just a blank ring. That's worth $32 more to know exactly what you're ordering 100 of.
 
-**For full order:** Jarry and Sophia are basically tied on price ($943 vs $945). Jarry wins on speed (up to 10 days faster). Go with Jarry unless Sophia offers something else.
+**For full order:** Jarry and Sophia are basically tied ($943 vs $945). Jarry wins on speed (up to 10 days faster). Nico has no full order quote yet - need to ask.
 
-**Glossy vs matte:** Glossy saves $68 on 100 rings. Worth getting one of each as samples to compare in person.
+**Glossy vs matte:** Only Jarry quoted both. Glossy saves $68 on 100 rings ($875 vs $943). Worth seeing both in person.
 
 ### Recommended Next Step
 
-Order 2 samples from Jarry (1 matte, 1 glossy) via standard shipping:
-- Cost: $38 total
-- Arrives: ~2-3 weeks (1 week production + 7-12 days shipping)
-- Test: NFC read range, finish quality, comfort, sizing
+**Option A (cheapest):** Order 2 samples from Jarry, standard shipping - $38. No engraving, but tests finish + NFC + comfort. Ask for 1 matte, 1 glossy.
 
-Status: READY TO ORDER SAMPLES FROM JARRY
+**Option B (see the real product):** Order 2 samples from Nico, DDP - $70. With engraving, so you see exactly what customers get. 9-11 days.
+
+**Option C (both):** Order from both Jarry ($38) and Nico ($70) = $108 total. Compare quality side by side. 4 sample rings from 2 different factories. Best data before committing $900+.
+
+**Also:** Ask Nico for a full order quote (100 pcs, matte black, NTAG216, DDP to US) so we can compare all three.
+
+Status: DECIDING ON SAMPLES
