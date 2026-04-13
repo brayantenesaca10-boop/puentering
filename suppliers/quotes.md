@@ -38,3 +38,25 @@ Total cost estimate at this quote:
 100 rings x $6.00 = $600
 Shipping: TBD (FOB means we pay freight)
 At $49 sell price: $4,900 revenue, ~$4,100+ gross profit (before shipping)
+
+---
+
+## Sample Quote from Yian (April 12, 2026)
+
+2 pcs NFC ceramic ring with laser engraved logo
+EXW cost: $35 (for both rings)
+
+### Shipping Options
+
+| Option | Cost | Delivery | Total |
+|---|---|---|---|
+| Express (DHL/FedEx) | $52 | 5-6 working days | $87 |
+| Small parcel (DDP) | $35 | 9-11 working days | $70 |
+
+DDP = Delivered Duty Paid (no surprise customs fees on arrival)
+
+### Decision
+
+Go with small parcel (DDP) at $70 total. Saves $17, only 4-5 days slower. No rush on samples - the web app build runs in parallel. Rings arrive around April 25 either way, well before the May 10 strategic 10 launch.
+
+Status: READY TO ORDER SAMPLES
