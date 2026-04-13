@@ -326,16 +326,7 @@
     }
 
     .ring-fallback {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 2rem;
       display: none;
-    }
-
-    @media (max-width: 900px) {
-      .ring-fallback { display: block; }
-      .ring-canvas { display: none; }
     }
 
     .ring-content {
@@ -662,7 +653,6 @@
     <div class="ring-stage">
       <div class="ring-viewer" id="ring-viewer">
         <canvas class="ring-canvas" id="ring-canvas"></canvas>
-        <img src="ring.png" alt="Puente Ring" class="ring-fallback" />
       </div>
       <div class="ring-content">
         <h2>One tap.<br><em>Now they know.</em></h2>
@@ -732,14 +722,11 @@
     }, { passive: true });
   </script>
 
-  <!-- SCREEN 2: 3D Ring (desktop only - mobile gets static image) -->
+  <!-- SCREEN 2: 3D Ring -->
   <script type="module">
-    if (window.innerWidth <= 900) {
-      // Mobile: skip Three.js + 29MB model entirely, show ring.png fallback
-    } else {
-      const THREE = await import('three');
-      const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
-      const { OrbitControls } = await import('three/addons/controls/OrbitControls.js');
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
       const canvas = document.getElementById('ring-canvas');
       const container = document.getElementById('ring-viewer');
@@ -834,7 +821,6 @@
         renderer.render(scene, camera);
       }
       animate();
-    }
   </script>
 
 </body>
