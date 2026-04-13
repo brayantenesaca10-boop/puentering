@@ -121,7 +121,7 @@ Contact: Nico
 Source: TBD
 Date: April 12, 2026
 
-### Samples Only (no full order quote yet)
+### Samples
 
 | Item | Cost |
 |---|---|
@@ -131,36 +131,51 @@ Date: April 12, 2026
 | **Total (express)** | **$87** |
 | **Total (DDP)** | **$70** |
 
-Notes: Nico's samples INCLUDE laser engraved logo. No full order quote yet.
+### Full Order (100 rings)
 
-Status: NEED FULL ORDER QUOTE (100 pcs, matte black, NTAG216, DDP to US)
+| Item | Cost |
+|---|---|
+| Per ring (EXW) | $8.45 |
+| 100 rings | $845 |
+| Shipping (DDP) | **TBD - need to ask** |
+| **Total landed** | **$845 + shipping** |
+
+Specs quoted:
+- Material: Ceramic
+- Chip: NTAG216
+- Color: Black
+- Surface: Outside matte, inside glossy
+- Logo: Laser engraved
+- Sizes: US 6 (15), US 7 (25), US 8 (30), US 10 (20), US 13 (10)
+- Production time: TBD
+- Shipping time: TBD
+
+Notes: Nico quoted the exact size distribution from our spec. Has size 13 (Sophia maxes at 12). Interesting detail: outside matte, inside glossy - that's a nice touch for comfort.
+
+Status: NEED shipping cost (DDP), production time, and shipping time
 
 ---
 
 ## Full Comparison
 
-### Full Order: 100 Matte Black Rings (DDP to US)
+### Full Order: 100 Rings (DDP to US)
 
-| | Yian (Jarry) | Sophia |
-|---|---|---|
-| Per ring (with duty) | $8.78 | $8.50 |
-| 100 rings | $878 | $850 |
-| Shipping (DDP) | $65 | $95 |
-| **Total landed** | **$943** | **$945** |
-| Production time | 15-20 days | 25 days |
-| Shipping time | 5-10 biz days | 5 biz days |
-| **Total time** | **20-30 days** | **~30 days** |
-| Inner engraving | Included | Included |
-| Logo included | Yes | Yes |
+| | Jarry Matte | Jarry Glossy | Sophia (matte or glossy) | Nico Matte |
+|---|---|---|---|---|
+| Per ring (landed) | $8.78 | $8.10 | $8.50 | $8.45 (EXW) |
+| 100 rings | $878 | $810 | $850 | $845 |
+| Shipping (DDP) | $65 | $65 | $95 | **TBD** |
+| **Total landed** | **$943** | **$875** | **$945** | **$845 + ship** |
+| Production time | 15-20 days | 15-20 days | 25 working days | TBD |
+| Shipping time | 5-10 biz days | 5-10 biz days | 5 working days | TBD |
+| **Total time** | **20-30 days** | **20-30 days** | **~30 days** | **TBD** |
+| Engraving | Included | Included | Included | Included |
+| Size 13 | TBD | TBD | **No (max 12)** | **Yes** |
+| Finish detail | Standard matte | Standard glossy | Standard | **Matte outside, glossy inside** |
 
-Virtually identical landed cost ($2 difference). Jarry is slightly faster.
+If Nico's shipping is similar to Jarry's ($65), his landed cost would be ~$910 - cheapest matte option. If closer to Sophia's ($95), it's ~$940.
 
-### Glossy Option (Yian only - Sophia didn't quote)
-
-| | Yian Glossy |
-|---|---|
-| Total landed (100 rings) | **$875** |
-| Savings vs matte | $68 less |
+Nico is the only supplier who quoted size 13 and the matte outside / glossy inside combo.
 
 ### Samples Comparison (All 3 Suppliers)
 
