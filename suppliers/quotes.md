@@ -156,26 +156,74 @@ Status: NEED shipping cost (DDP), production time, and shipping time
 
 ---
 
+## Quote 4: Vinson Zeng - Shenzhen Xinyetong Technology Development Co., Ltd.
+
+Contact: Vinson Zeng
+Source: Email / Alibaba (xinyetongcard.en.alibaba.com)
+Website: www.asiarfid.com
+WhatsApp: +86 18823763800
+Email: sales05@asiarfid.com
+Date: April 12, 2026
+
+**Own factory.** They manufacture in-house - not a middleman.
+
+### Full Order (100 rings)
+
+| Item | Cost |
+|---|---|
+| Per ring | $5.20 |
+| 100 rings | $520 |
+| Shipping (UPS DDP incl. import tax) | $75 |
+| **Total landed** | **$595** |
+
+- Production time: 15-20 days
+- Shipping: UPS express DDP (includes import tax)
+- Engraving: PUENTE inner engraving included
+- MOQ for reorders: 20 pcs
+- Material: Zirconia ceramic
+- Finish: **Glossy only - no matte available for this material**
+
+### Samples
+
+| Item | Cost |
+|---|---|
+| 1 sample ring | Free (before full order) |
+| Shipping (UPS DDP) | $60 |
+| **Total** | **$60** |
+
+### Notes
+
+- Glossy only. No matte option. They say zirconia ceramic only comes in glossy.
+- $5.20/ring is the cheapest per-unit by far
+- $595 total landed is $350 less than the next cheapest option
+- Own factory = more control over quality and timeline
+- MOQ 20 pcs for reorders is extremely low
+- Sent photos of previous glossy black ceramic NFC rings they made
+
+Status: STRONG CONTENDER - cheapest by far, own factory, but glossy only
+
+---
+
 ## Full Comparison
 
 ### Full Order: 100 Rings (DDP to US)
 
-| | Jarry Matte | Jarry Glossy | Sophia (matte or glossy) | Nico Matte |
-|---|---|---|---|---|
-| Per ring (landed) | $8.78 | $8.10 | $8.50 | $8.45 (EXW) |
-| 100 rings | $878 | $810 | $850 | $845 |
-| Shipping (DDP) | $65 | $65 | $95 | **TBD** |
-| **Total landed** | **$943** | **$875** | **$945** | **$845 + ship** |
-| Production time | 15-20 days | 15-20 days | 25 working days | TBD |
-| Shipping time | 5-10 biz days | 5-10 biz days | 5 working days | TBD |
-| **Total time** | **20-30 days** | **20-30 days** | **~30 days** | **TBD** |
-| Engraving | Included | Included | Included | Included |
-| Size 13 | TBD | TBD | **No (max 12)** | **Yes** |
-| Finish detail | Standard matte | Standard glossy | Standard | **Matte outside, glossy inside** |
-
-If Nico's shipping is similar to Jarry's ($65), his landed cost would be ~$910 - cheapest matte option. If closer to Sophia's ($95), it's ~$940.
-
-Nico is the only supplier who quoted size 13 and the matte outside / glossy inside combo.
+| | **Vinson (glossy)** | Jarry Glossy | Nico Matte | Jarry Matte | Sophia Matte |
+|---|---|---|---|---|---|
+| Per ring (landed) | **$5.20** | $8.10 | $8.45 (EXW) | $8.78 | $8.50 |
+| 100 rings | **$520** | $810 | $845 | $878 | $850 |
+| Shipping (DDP) | $75 | $65 | **TBD** | $65 | $95 |
+| **Total landed** | **$595** | **$875** | **$910-940 est** | **$943** | **$945** |
+| Production | 15-20 days | 15-20 days | TBD | 15-20 days | 25 work days |
+| Shipping | UPS express | 5-10 biz | TBD | 5-10 biz | 5 work days |
+| **Total time** | **~25 days** | **20-30 days** | **TBD** | **20-30 days** | **~30 days** |
+| Engraving | Included | Included | Included | Included | Included |
+| Size 13 | **Ask** | TBD | **Yes** | TBD | **No** |
+| Finish | Glossy only | Glossy | Matte out/glossy in | Matte | Matte |
+| Own factory | **Yes** | Unknown | Unknown | Unknown | Unknown |
+| Reorder MOQ | **20 pcs** | 50 pcs | Unknown | 50 pcs | 100 pcs |
+| **Profit (100 sold)** | **$4,305** | **$4,025** | **~$3,960-3,990** | **$3,957** | **$3,955** |
+| **Break-even** | **13 rings** | **18 rings** | **~19-20 rings** | **20 rings** | **20 rings** |
 
 ### Samples Comparison (All 3 Suppliers)
 
