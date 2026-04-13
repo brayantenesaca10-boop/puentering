@@ -1,10 +1,10 @@
 # Puente
 
-## A Visibility Company
+## Networking Worth Having
 
 Every person has a story worth knowing. The world is structured to make sure nobody hears it. We're changing that.
 
-Puente is not a ring company. Puente is not a tech company. Puente is a visibility company. The ring is the first product. It won't be the last.
+Puente is a networking ring - but not the kind you've seen before. No LinkedIn. No business cards. No "let me pick your brain." Just: tap, hear their story, see what connects you. The ring is the first product. It won't be the last.
 
 ## The Belief
 
@@ -22,6 +22,18 @@ Wrong energy: "Please see me. I'm invisible. I need this."
 Right energy: "I know who I am. When you tap this ring, you're going to find out too."
 
 The ring wearer is not asking for something. They are offering something. That is generosity. That is power.
+
+## Who Buys vs. Who Stars
+
+Sell to the confident. Film the invisible. Both win.
+
+The first buyers are people who already believe their story matters and want a beautiful way to share it:
+- Young professionals tired of LinkedIn feeling fake
+- Immigrant entrepreneurs who want to bridge cultures with pride
+- Community leaders (pastors, coaches, small business owners) who interact with dozens daily
+- College students who want real connection, not another app
+
+The janitor from Ecuador, the church receptionist, the soccer coach who every kid loves - they are the heroes of the brand film. They get rings for free as the strategic 10. Their moments become the content that sells to everyone else.
 
 ## The Enemy
 
@@ -41,25 +53,39 @@ Tap it on any phone. Your story appears.
 
 ### The Experience (This Is the Actual Product)
 
+There are two layers. The first is instant. The second is the real product.
+
+**Layer 1: Social Profiles (The Quick Win)**
+
 1. You get your ring. You open the app.
-2. The app asks you five questions, one at a time, out loud:
+2. First thing you do: drop in your socials - Instagram, TikTok, LinkedIn, whatever you use.
+3. Done. Your ring now works. Tap it on any phone and your socials pop up.
+
+This takes 30 seconds. It's a small dopamine hit - "my ring works, people can find me." It gives the buyer instant value the moment they open the box. No friction, no blank page, no commitment. Just a working ring.
+
+**Layer 2: Your Story (The Real Product)**
+
+4. After the socials are set, the app nudges you: "Ready to go deeper?"
+5. Five questions, one at a time, out loud:
    - "Say your name and where you're from."
    - "What do you do that people don't know about?"
    - "What's the meal that reminds you of home?"
    - "What could you talk about for an hour without getting bored?"
    - "What's something people are always surprised to learn about you?"
-3. Each answer is 15 seconds of your voice. The app stitches them into your profile.
-4. AI clones your voice and translates your story into any language. Not a robot. You.
-5. You tap your ring on someone's phone. Your profile opens - your story, your voice, in their language.
-6. They see a button: "Connect with [your name]"
-7. They enter their first name, email, phone.
-8. AI cross-references everything to find what connects you. Same hometown. Same interests. Same church. Kids at the same school.
-9. Both of you see the connection - what you share, why you should talk.
-10. The app shows your visibility map over time - every person who now knows your story.
+6. Each answer is 15 seconds of your voice. The app stitches them into your profile.
+7. AI clones your voice and translates your story into any language. Not a robot. You.
+8. Now when you tap your ring, people don't just see your socials - they hear your story, in their language.
+9. They see a button: "Connect with [your name]"
+10. They enter their first name, email, phone.
+11. AI cross-references everything to find what connects you. Same hometown. Same interests. Same church. Kids at the same school.
+12. Both of you see the connection - what you share, why you should talk.
+13. The app shows your network map over time - every person who now knows your story.
 
-The magic is at steps 8 and 9. That is the demo. That is the Macintosh moment. Two strangers tap and instantly see why they belong in each other's lives.
+The socials get them in the door. The story is what makes them stay. Most people will add their socials in 30 seconds and feel good. Then curiosity and the nudge pull them into the five questions. That's where the magic lives.
 
-The ring is the hardware. The five questions are the onboarding. The moment of connection is the product.
+The magic is at steps 11 and 12. That is the demo. That is the Macintosh moment. Two strangers tap and instantly see why they belong in each other's lives.
+
+The ring is the hardware. The socials are the instant win. The five questions are the deeper onboarding. The moment of connection is the product.
 
 ### Why the Five Questions Matter
 
@@ -85,7 +111,6 @@ The first question - "say your name and where you're from" - is the hook. Everyo
 Confidence, not need. Generosity, not desperation. Warmth, not tech. "Now they'll know."
 
 ### What We Never Say
-- Networking
 - Digital business card
 - Smart ring
 - Contact sharing
@@ -95,9 +120,10 @@ Confidence, not need. Generosity, not desperation. Warmth, not tech. "Now they'l
 ### What We Always Say
 - Your story
 - Now they'll know
-- Visibility
+- Networking worth having
 - Bridge
 - Connection
+- Tap, hear their story, see what connects you
 
 ### Color Palette
 - Primary: Black (#1A1714) + warm cream (#FAF8F5)
@@ -134,9 +160,9 @@ The product IS the marketing. Every tap is a demo and a sales channel. Tradition
 
 ### Positioning
 
-Puente does not exist in any current category. It is not a smart ring. It is not a social network. It is not a business card. It is a new category: personal visibility.
+Puente is a networking ring. But it redefines what networking means. Not transactions - stories. Not "what can you do for me" - "who are you, really."
 
-We do not compete with Ping, Popl, or any NFC product. They are in the "digital business card" category. We are in the "your story matters" category. Different shelf. Different buyer. Different emotion.
+We don't compete with Ping, Popl, or any NFC product. They share contact info. We share people. They're digital business cards. We're the first networking tool built on story instead of resume. Different shelf. Different buyer. Different emotion.
 
 ### The Marketing Funnel
 
@@ -224,15 +250,15 @@ No invite codes. No applications. No artificial gates. Just: "I tapped someone's
 
 ### Expansion Path
 
-Batch 1: 100 rings in Danbury, CT. Churches, soccer leagues, barbershops.
+Batch 1: 100 rings in Danbury, CT. Churches, soccer leagues, barbershops, college campuses.
 Batch 2: 200-500 rings. Expand to neighboring Connecticut towns.
 Batch 3: New cities with dense multicultural communities.
 
-The pattern: find a community where people are side by side but not seen. Seed 10 rings with magnetic invisible people. Film the moments. Let it grow.
+The pattern: sell to the confident people who already want to share who they are. Seed 10 free rings with magnetic invisible people and film those moments. The sales come from the confident buyers. The brand comes from the stories of the invisible. Both fuel each other.
 
 ### Beyond the Ring
 
-The ring is product one. The visibility platform is the company. Future products could include:
+The ring is product one. The networking-through-story platform is the company. Future products could include:
 - Community visibility events (Puente Nights)
 - Employer partnerships (help workplaces see their people)
 - School programs (students sharing their backgrounds)
@@ -261,12 +287,18 @@ April 13-16: Set up project
 - Next.js app, Turso DB, deploy on Vercel
 - Domain: puentering.com (done, connected to Vercel)
 
-April 16-20: Profile creation with five questions
+April 16-18: Social profiles (Layer 1 - the quick win)
+- Profile page at puentering.com/[username]
+- Add social links: Instagram, TikTok, LinkedIn, X, personal site
+- Social links display on profile with tap-to-open
+- This is the instant value - ring works out of the box
+
+April 18-22: Story creation with five questions (Layer 2)
 - Voice recording for each question (15 seconds each)
 - Audio playback on profile page
-- Profile page at puentering.com/[username]
+- Nudge flow: after socials are set, prompt "Ready to go deeper?"
 
-April 20-25: AI voice + translation
+April 22-25: AI voice + translation
 - Resemble AI for voice cloning
 - DeepL for translation
 - Generate translated audio in user's cloned voice
@@ -415,7 +447,7 @@ Break-even: sell 13 rings.
 
 Every decision runs through one question:
 
-Does this make invisible people more visible?
+Does this help people be known for who they really are?
 
 If yes, do it. If no, cut it.
 
@@ -429,4 +461,4 @@ Books were a way to tell stories. Social media was a way to tell stories. But th
 
 This is in person. This is real. This is two people standing next to each other, and for the first time, actually knowing who the other one is.
 
-Puente is a visibility company. The ring is just the beginning.
+Puente is networking worth having. The ring is just the beginning.

@@ -2,7 +2,7 @@
 
 ## Price Point: $49
 
-Puente is a visibility product, not a tech gadget. $49 positions it as something worth having, not something cheap to try. At $29 people ask "is this legit?" At $49 people think "this is a real product." Someone already confirmed $50 is nothing. Trust the signal.
+Puente is a networking product built on story, not a tech gadget. $49 positions it as something worth having, not something cheap to try. At $29 people ask "is this legit?" At $49 people think "this is a real product." Someone already confirmed $50 is nothing. Trust the signal.
 
 ## Option A: Full Launch (Premium Experience) - $1,500-2,200
 

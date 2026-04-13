@@ -62,4 +62,4 @@ When talking to suppliers, use these terms so they understand exactly what you w
 
 ## Design Note
 
-The ring is the first product of a visibility company. It is not the company. The ring should feel like something you'd wear to be seen - not a gadget, not tech. It should feel like it belongs on the hand of someone who has been overlooked their whole life and is about to be heard for the first time.
+The ring is the first product of a networking company built on story. It is not the company. The ring should feel like something a confident person wears because they know who they are - not a gadget, not tech. When someone taps it, they don't just get a contact card. They get a person.

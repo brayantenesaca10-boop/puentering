@@ -22,17 +22,28 @@ Brayan's mother's journey: Ecuador to the US, cleaning McDonald's bathrooms, to 
 
 No other ring, social media, website, or business card does this. Puente makes invisible people visible.
 
-## The Debate: What Puente Actually Is
+## The Debate: What Puente Actually Is (Resolved)
 
-If you're solving isolation, Puente is a networking tool.
-If you're solving invisibility, Puente is a dignity tool.
-Those are two completely different companies.
+Old framing: networking vs. visibility - pick one.
+New framing: networking THROUGH story. They were never separate.
 
-Puente is a visibility company. The ring is the first product. It won't be the last.
+Puente is a networking ring. But it redefines what networking means. Not transactions - stories. Not "what can you do for me" - "who are you, really." Apple didn't avoid the word "computer" - they redefined what a computer felt like. We don't avoid "networking" - we redefine what networking feels like.
 
-When that janitor taps his ring and someone sees his story, his interests, the AI shows them they both love soccer, they both came from Ecuador, they both have a daughter the same age - he didn't just "connect." He became visible. For maybe the first time in that building.
+When that janitor taps his ring and someone sees his story, his interests, the AI shows them they both love soccer, they both came from Ecuador, they both have a daughter the same age - that IS networking. It's just networking built on story instead of resume. People will forget every spec on that ring. They will never forget the first time someone actually saw them.
 
-That's not a feature. That's a moment. People will forget every spec on that ring. They will never forget the first time someone actually saw them.
+## Two Layers: Instant Win, Then Depth
+
+Layer 1 (Social Profiles): Drop in your Instagram, TikTok, LinkedIn - ring works in 30 seconds. Small dopamine hit. "My ring works." This gets people in the door with zero friction.
+
+Layer 2 (Your Story): Five voice questions that build a story without feeling like homework. This is where the magic lives. The socials get them started. The story makes them stay. Most people do Layer 1 immediately. Curiosity and a nudge pull them into Layer 2.
+
+## Who Buys vs. Who Stars
+
+Sell to the confident: young professionals, immigrant entrepreneurs, community leaders, college students - people who already believe their story matters and want a beautiful way to share it.
+
+Film the invisible: the janitor, the church receptionist, the soccer coach. They get rings for free as the strategic 10. Their moments become the content that sells to everyone else.
+
+Both win. The confident buyers fund the company. The invisible people define the brand.
 
 ## Steve's Three Branding Rules
 
@@ -54,16 +65,16 @@ Every decision from today forward runs through one filter: does this make invisi
 
 ## Core Brand Identity
 
-Company: Puente - A visibility company
-Mission: Making invisible people visible
+Company: Puente - Networking worth having
+Mission: Networking built on story, not resume
 Tagline: "Every person has a story worth knowing"
-Enemy: Invisibility - being surrounded but not seen
+One-liner: Tap. Hear their story. See what connects you.
+Enemy: Hollow networking - transactions without humanity
 First product: The Puente Ring
-Promise: When you wear this ring, your story will be heard
+Promise: When you wear this ring, people won't just know your name - they'll know your story
 
 ## What We Never Say
 
-- Networking
 - Digital business card
 - Smart ring
 - Contact sharing
@@ -72,27 +83,35 @@ Promise: When you wear this ring, your story will be heard
 ## What We Always Say
 
 - Your story
-- Be seen
-- Be heard
-- Visibility
+- Now they'll know
+- Networking worth having
 - Bridge
 - Connection
+- Tap, hear their story, see what connects you
 
 ## Product Flow (The Moment)
 
-1. You wear the ring. You tap it on someone's phone.
-2. Your profile opens - your name, where you're from, your story in your voice, in their language.
-3. They see a button: "Connect with [your name]"
-4. They enter: first name, email, phone.
-5. AI instantly cross-references everything to find what connects you. Same hometown. Same interests. Kids at the same school. Same church.
-6. Both of you see the connection - what you share, why you should talk.
-7. The app shows your visibility map over time - every person who now knows your story.
+**Layer 1 - Instant win (30 seconds):**
+1. You get your ring. Drop in your socials - Instagram, TikTok, LinkedIn.
+2. Ring works. Tap it, your socials pop up. Small dopamine hit. Done.
 
-The magic is at steps 5 and 6. That is the demo. That is the Macintosh moment.
+**Layer 2 - The real product (when they're ready):**
+3. App nudges: "Ready to go deeper?"
+4. Five voice questions, 15 seconds each. Story built without a blank page.
+5. AI clones your voice, translates into any language.
+6. Now when you tap, people don't just see your socials - they hear your story.
+7. They tap "Connect with [your name]" - enter their info.
+8. AI cross-references everything to find what connects you. Same hometown. Same interests. Kids at the same school.
+9. Both of you see the connection - what you share, why you should talk.
+10. The app shows your network map over time.
 
-## Networking vs Visibility
+The magic is at steps 8 and 9. That is the demo. That is the Macintosh moment. The socials get them in the door. The story is what makes them stay.
 
-Puente is NOT a networking tool. Networking is transactional - what can this person do for me? Puente is about being seen for who you ARE, not what you can DO for someone. The janitor doesn't need to network. He needs to be visible.
+## Networking Redefined
+
+Puente IS a networking tool - just not the kind anyone has seen before. Old networking is transactional: what can this person do for me? Puente networking is built on story: who is this person, really?
+
+The janitor doesn't need a LinkedIn connection. He needs someone to hear that he coached soccer for 20 years. That IS networking - it's just networking worth having.
 
 The network effect happens naturally. When someone taps your ring and sees "you're both from Ecuador, you both play soccer" - they tell their friends. Not because of gamification. Because the experience changed how they see their neighbor.
 
