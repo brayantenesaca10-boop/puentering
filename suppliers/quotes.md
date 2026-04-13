@@ -204,6 +204,34 @@ Status: STRONG CONTENDER - cheapest by far, own factory, but glossy only
 
 ---
 
+## Quote 5: SmartPayRing (Daisy)
+
+Contact: Daisy
+Source: Email (info@smartpayring.com)
+Website: smartpayring.com
+Date: April 13, 2026
+
+**Ring factory - only makes smart rings.**
+
+### Full Order
+
+| Item | Cost |
+|---|---|
+| Per ring | $5.20 |
+| MOQ | **None** |
+| Shipping (DDP) | TBD |
+| Production time | TBD |
+
+- Material: Full ceramic
+- Chip: NTAG216
+- Engraving: TBD - need to confirm
+- Samples: Yes, pay shipping only
+- Own factory: **Yes - "a factory that only makes various smart rings"**
+
+Status: NEED shipping cost, production time, engraving confirmation, DDP details
+
+---
+
 ## Full Comparison
 
 ### Full Order: 100 Rings (DDP to US)
