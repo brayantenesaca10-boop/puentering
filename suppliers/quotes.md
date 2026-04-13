@@ -105,10 +105,13 @@ Production time: 25 days + 5 working days shipping = ~30 days total
 
 | Item | Cost |
 |---|---|
-| 2 sample rings (with laser engraving) | $58 |
-| Shipping | TBD - need to ask |
+| 2 sample rings (with laser engraving) + shipping | $59 |
+| Shipping time | 7 working days |
+| **Total** | **$59** |
 
-Status: NEED shipping cost + delivery time for samples
+Note: 60-day dispatch on Alibaba invoice is platform policy, not actual timeline. Real shipping is 7 working days.
+
+Status: WAITING on glossy quote for full order
 
 ---
 
@@ -161,15 +164,13 @@ Virtually identical landed cost ($2 difference). Jarry is slightly faster.
 
 ### Samples Comparison (All 3 Suppliers)
 
-| | Jarry (std) | Jarry (exp) | Sophia | Nico (DDP) | Nico (exp) |
+| | Jarry (std) | Jarry (exp) | **Sophia** | Nico (DDP) | Nico (exp) |
 |---|---|---|---|---|---|
-| 2 rings | $20 | $20 | $58 | $35 | $35 |
-| Shipping | $18 | $38 | TBD | $35 | $52 |
-| **Total** | **$38** | **$58** | **$58+ship** | **$70** | **$87** |
-| Delivery | ~2-3 wks | ~1.5-2 wks | TBD | 9-11 days | 5-6 days |
+| 2 rings | $20 | $20 | $59 (incl ship) | $35 | $35 |
+| Shipping | $18 | $38 | Included | $35 | $52 |
+| **Total** | **$38** | **$58** | **$59** | **$70** | **$87** |
+| Delivery | ~2-3 wks | ~1.5-2 wks | ~7 working days | 9-11 days | 5-6 days |
 | Engraving | No | No | **Yes** | **Yes** | **Yes** |
-
-Sophia: $58 for 2 samples with laser engraved logo inside. Shipping/delivery TBD.
 
 ### Verdict
 
