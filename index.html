@@ -178,6 +178,16 @@
       max-width: 700px;
     }
 
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUpDim {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 0.3; transform: translateY(0); }
+    }
+
     .story-line {
       font-family: 'Instrument Serif', serif;
       font-size: clamp(1.8rem, 4vw, 3rem);
@@ -185,18 +195,27 @@
       line-height: 1.4;
       color: var(--text-light);
       opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
       margin-bottom: 0.3rem;
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .story-line.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    /* Line 1: "You know who you are." */
+    .story-line:nth-child(1) { animation-delay: 0.4s; }
+    /* Line 2: "But networking never let you show it." (after pause) */
+    .story-line:nth-child(3) { animation-delay: 1.7s; }
+    /* Line 3: "LinkedIn. Business cards. Small talk." (dim) */
+    .story-line:nth-child(4) { animation-delay: 2.2s; animation-name: fadeInUpDim; }
+    /* Line 4: "None of it is you." (after pause) */
+    .story-line:nth-child(6) { animation-delay: 3.5s; }
+    /* Line 5: "Tap your ring." (after pause) */
+    .story-line:nth-child(8) { animation-delay: 4.8s; }
+    /* Line 6: "Your socials. Your story. Your voice." */
+    .story-line:nth-child(9) { animation-delay: 5.3s; }
+    /* Line 7: "Now they'll know." (accent, after pause) */
+    .story-line:nth-child(11) { animation-delay: 6.4s; }
 
     .story-line.dim {
-      opacity: 0.3;
+      /* handled by fadeInUpDim animation */
     }
 
     .story-line.accent {
@@ -211,13 +230,8 @@
     .story-cta {
       margin-top: 4rem;
       opacity: 0;
-      transform: translateY(20px);
-      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .story-cta.visible {
-      opacity: 1;
-      transform: translateY(0);
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 7s;
     }
 
     .story-scroll {
@@ -226,11 +240,8 @@
       left: 50%;
       transform: translateX(-50%);
       opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .story-scroll.visible {
-      opacity: 1;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 7s;
     }
 
     .scroll-dot {
@@ -312,6 +323,19 @@
 
     .ring-canvas:active {
       cursor: grabbing;
+    }
+
+    .ring-fallback {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 2rem;
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .ring-fallback { display: block; }
+      .ring-canvas { display: none; }
     }
 
     .ring-content {
@@ -638,6 +662,7 @@
     <div class="ring-stage">
       <div class="ring-viewer" id="ring-viewer">
         <canvas class="ring-canvas" id="ring-canvas"></canvas>
+        <img src="ring.png" alt="Puente Ring" class="ring-fallback" />
       </div>
       <div class="ring-content">
         <h2>One tap.<br><em>Now they know.</em></h2>
@@ -699,139 +724,117 @@
     <a href="mailto:brayan@puentering.com" class="footer-link">Contact</a>
   </footer>
 
-  <!-- SCREEN 1: Story reveal animation -->
+  <!-- Nav scroll -->
   <script>
-    // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
-
-    // Story lines - reveal one by one
-    const storyLines = document.querySelectorAll('.story-line');
-    const storyCta = document.getElementById('story-cta');
-    const storyScroll = document.getElementById('story-scroll');
-
-    let delay = 400;
-    storyLines.forEach((line, i) => {
-      const prevEl = storyLines[i - 1] || null;
-      const isPause = line.previousElementSibling && line.previousElementSibling.classList.contains('story-pause');
-      if (isPause) delay += 800;
-
-      setTimeout(() => {
-        line.classList.add('visible');
-      }, delay);
-
-      delay += line.classList.contains('accent') ? 600 : 500;
-    });
-
-    // Show CTA and scroll dot after all lines
-    setTimeout(() => {
-      storyCta.classList.add('visible');
-      storyScroll.classList.add('visible');
-    }, delay + 400);
   </script>
 
-  <!-- SCREEN 2: 3D Ring -->
+  <!-- SCREEN 2: 3D Ring (desktop only - mobile gets static image) -->
   <script type="module">
-    import * as THREE from 'three';
-    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    if (window.innerWidth <= 900) {
+      // Mobile: skip Three.js + 29MB model entirely, show ring.png fallback
+    } else {
+      const THREE = await import('three');
+      const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
+      const { OrbitControls } = await import('three/addons/controls/OrbitControls.js');
 
-    const canvas = document.getElementById('ring-canvas');
-    const container = document.getElementById('ring-viewer');
+      const canvas = document.getElementById('ring-canvas');
+      const container = document.getElementById('ring-viewer');
 
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xFAF8F5);
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xFAF8F5);
 
-    const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
-    camera.position.set(0, 1.5, 4);
+      const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+      camera.position.set(0, 1.5, 4);
 
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvas,
-      antialias: true,
-    });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.2;
+      const renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        antialias: true,
+      });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.2;
 
-    function resize() {
-      const w = container.clientWidth;
-      const h = container.clientHeight;
-      renderer.setSize(w, h);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    }
-    resize();
-    window.addEventListener('resize', resize);
+      function resize() {
+        const w = container.clientWidth;
+        const h = container.clientHeight;
+        renderer.setSize(w, h);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener('resize', resize);
 
-    // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
-    scene.add(ambientLight);
+      // Lighting
+      scene.add(new THREE.AmbientLight(0xffffff, 0.4));
 
-    const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
-    keyLight.position.set(3, 5, 4);
-    scene.add(keyLight);
+      const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
+      keyLight.position.set(3, 5, 4);
+      scene.add(keyLight);
 
-    const fillLight = new THREE.DirectionalLight(0xF5E6D3, 0.6);
-    fillLight.position.set(-3, 2, -2);
-    scene.add(fillLight);
+      const fillLight = new THREE.DirectionalLight(0xF5E6D3, 0.6);
+      fillLight.position.set(-3, 2, -2);
+      scene.add(fillLight);
 
-    const rimLight = new THREE.DirectionalLight(0xffffff, 0.8);
-    rimLight.position.set(0, -2, -4);
-    scene.add(rimLight);
+      const rimLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      rimLight.position.set(0, -2, -4);
+      scene.add(rimLight);
 
-    // Controls
-    const controls = new OrbitControls(camera, canvas);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
-    controls.enableZoom = false;
-    controls.enablePan = false;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 2.5;
+      // Controls
+      const controls = new OrbitControls(camera, canvas);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.enableZoom = false;
+      controls.enablePan = false;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 2.5;
 
-    // Load the ring
-    let ringModel = null;
-    const loader = new GLTFLoader();
-    loader.load('ring.glb', (gltf) => {
-      ringModel = gltf.scene;
+      // Load the ring
+      let ringModel = null;
+      const loader = new GLTFLoader();
+      loader.load('ring.glb', (gltf) => {
+        ringModel = gltf.scene;
 
-      const box = new THREE.Box3().setFromObject(ringModel);
-      const center = box.getCenter(new THREE.Vector3());
-      const size = box.getSize(new THREE.Vector3());
-      const maxDim = Math.max(size.x, size.y, size.z);
-      const scale = 2 / maxDim;
-      ringModel.scale.setScalar(scale);
-      ringModel.position.sub(center.multiplyScalar(scale));
+        const box = new THREE.Box3().setFromObject(ringModel);
+        const center = box.getCenter(new THREE.Vector3());
+        const size = box.getSize(new THREE.Vector3());
+        const maxDim = Math.max(size.x, size.y, size.z);
+        const scale = 2 / maxDim;
+        ringModel.scale.setScalar(scale);
+        ringModel.position.sub(center.multiplyScalar(scale));
 
-      ringModel.traverse((child) => {
-        if (child.isMesh) {
-          child.material = new THREE.MeshPhysicalMaterial({
-            color: 0x1A1714,
-            metalness: 0.15,
-            roughness: 0.2,
-            clearcoat: 0.8,
-            clearcoatRoughness: 0.15,
-            reflectivity: 0.5,
-            envMapIntensity: 1.0,
-          });
-        }
+        ringModel.traverse((child) => {
+          if (child.isMesh) {
+            child.material = new THREE.MeshPhysicalMaterial({
+              color: 0x1A1714,
+              metalness: 0.15,
+              roughness: 0.2,
+              clearcoat: 0.8,
+              clearcoatRoughness: 0.15,
+              reflectivity: 0.5,
+              envMapIntensity: 1.0,
+            });
+          }
+        });
+
+        scene.add(ringModel);
       });
 
-      scene.add(ringModel);
-    });
-
-    let time = 0;
-    function animate() {
-      requestAnimationFrame(animate);
-      time += 0.01;
-      if (ringModel) {
-        ringModel.position.y = Math.sin(time * 1.5) * 0.08;
+      let time = 0;
+      function animate() {
+        requestAnimationFrame(animate);
+        time += 0.01;
+        if (ringModel) {
+          ringModel.position.y = Math.sin(time * 1.5) * 0.08;
+        }
+        controls.update();
+        renderer.render(scene, camera);
       }
-      controls.update();
-      renderer.render(scene, camera);
+      animate();
     }
-    animate();
   </script>
 
 </body>
