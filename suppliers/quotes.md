@@ -34,10 +34,31 @@ Status: PENDING - need to confirm specs match (matte black, beveled edge, inner 
 
 ---
 
-Total cost estimate at this quote:
-100 rings x $6.00 = $600
-Shipping: TBD (FOB means we pay freight)
-At $49 sell price: $4,900 revenue, ~$4,100+ gross profit (before shipping)
+Total cost estimate at this quote (UPDATED April 12):
+
+### Full Order (100 rings)
+
+| Finish | Unit price | With customs duty | 100 rings | Shipping (DDP) | **Total landed** |
+|---|---|---|---|---|---|
+| Matte (frosted) | $6.50 | $8.78 | $878 | $65 | **$943** |
+| Glossy | $6.00 | $8.10 | $810 | $65 | **$875** |
+
+Production time: 15-20 days
+Shipping time: 5-10 business days
+Includes inner logo engraving
+
+### Samples
+
+| Item | Cost |
+|---|---|
+| Per sample ring (no logo) | $10 |
+| 2 samples | $20 |
+| Express shipping (3-8 biz days) | $38 |
+| Standard shipping (7-12 biz days) | $18 |
+| **Total (express)** | **$58** |
+| **Total (standard)** | **$38** |
+
+Production time: 1 week
 
 ---
 
@@ -87,21 +108,66 @@ Date: April 12, 2026
 
 Production time: 25 days + 5 working days shipping = ~30 days total
 
-### Comparison: Yian vs Sophia (100 rings)
+---
+
+## Full Comparison
+
+### Full Order: 100 Matte Black Rings (DDP to US)
 
 | | Yian (Jarry) | Sophia |
 |---|---|---|
-| Per ring | $6.00 | $8.50 |
-| 100 rings | $600 | $850 |
-| Shipping (DDP) | TBD | $95 |
-| Total landed | ~$700-800 (est) | $945 |
-| Difference | | **+$145-245 more** |
-| Production time | Ships May 12 | ~30 days from order |
+| Per ring (with duty) | $8.78 | $8.50 |
+| 100 rings | $878 | $850 |
+| Shipping (DDP) | $65 | $95 |
+| **Total landed** | **$943** | **$945** |
+| Production time | 15-20 days | 25 days |
+| Shipping time | 5-10 biz days | 5 biz days |
+| **Total time** | **20-30 days** | **~30 days** |
+| Inner engraving | Included | Included |
+| Logo included | Yes | Yes |
 
-### Notes
+Virtually identical landed cost ($2 difference). Jarry is slightly faster.
 
-Sophia is $2.50/ring more expensive than Yian. On 100 rings that's $250 extra cost. Both are matte black ceramic with NTAG216 and laser engraving.
+### Glossy Option (Yian only - Sophia didn't quote)
 
-Need from Yian: full landed cost (DDP) for 100 rings to compare apples to apples. Jarry's per-unit is cheaper but we don't have his shipping cost for the full order yet.
+| | Yian Glossy |
+|---|---|
+| Total landed (100 rings) | **$875** |
+| Savings vs matte | $68 less |
 
-Status: WAITING - need Yian's full order DDP quote to make final comparison
+### Samples Comparison
+
+| | Yian (Jarry) | Yian (Jarry) |
+|---|---|---|
+| | Express | Standard |
+| 2 sample rings | $20 | $20 |
+| Shipping | $38 | $18 |
+| **Total** | **$58** | **$38** |
+| Delivery | 1 wk + 3-8 days | 1 wk + 7-12 days |
+| Engraving | No | No |
+
+vs. Yian's earlier sample quote (WITH engraving):
+
+| | Express | DDP |
+|---|---|---|
+| 2 sample rings | $35 | $35 |
+| Shipping | $52 | $35 |
+| **Total** | **$87** | **$70** |
+| Delivery | 5-6 days | 9-11 days |
+
+### Verdict
+
+**For samples:** Jarry's updated quote is better. $38 standard or $58 express vs $70-87 from the earlier quote. The samples won't have the logo but that's fine - we're testing finish, NFC range, and comfort, not the engraving.
+
+**For full order:** Jarry and Sophia are basically tied on price ($943 vs $945). Jarry wins on speed (up to 10 days faster). Go with Jarry unless Sophia offers something else.
+
+**Glossy vs matte:** Glossy saves $68 on 100 rings. Worth getting one of each as samples to compare in person.
+
+### Recommended Next Step
+
+Order 2 samples from Jarry (1 matte, 1 glossy) via standard shipping:
+- Cost: $38 total
+- Arrives: ~2-3 weeks (1 week production + 7-12 days shipping)
+- Test: NFC read range, finish quality, comfort, sizing
+
+Status: READY TO ORDER SAMPLES FROM JARRY
