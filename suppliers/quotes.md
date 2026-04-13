@@ -101,6 +101,15 @@ Date: April 12, 2026
 
 Production time: 25 days + 5 working days shipping = ~30 days total
 
+### Samples
+
+| Item | Cost |
+|---|---|
+| 2 sample rings (with laser engraving) | $58 |
+| Shipping | TBD - need to ask |
+
+Status: NEED shipping cost + delivery time for samples
+
 ---
 
 ## Quote 3: Nico (Unknown Company)
@@ -152,19 +161,19 @@ Virtually identical landed cost ($2 difference). Jarry is slightly faster.
 
 ### Samples Comparison (All 3 Suppliers)
 
-| | Jarry (standard) | Jarry (express) | Nico (DDP) | Nico (express) |
-|---|---|---|---|---|
-| 2 rings | $20 | $20 | $35 | $35 |
-| Shipping | $18 | $38 | $35 | $52 |
-| **Total** | **$38** | **$58** | **$70** | **$87** |
-| Delivery | 1 wk + 7-12 days | 1 wk + 3-8 days | 9-11 days | 5-6 days |
-| Engraving | No | No | Yes | Yes |
+| | Jarry (std) | Jarry (exp) | Sophia | Nico (DDP) | Nico (exp) |
+|---|---|---|---|---|---|
+| 2 rings | $20 | $20 | $58 | $35 | $35 |
+| Shipping | $18 | $38 | TBD | $35 | $52 |
+| **Total** | **$38** | **$58** | **$58+ship** | **$70** | **$87** |
+| Delivery | ~2-3 wks | ~1.5-2 wks | TBD | 9-11 days | 5-6 days |
+| Engraving | No | No | **Yes** | **Yes** | **Yes** |
 
-Sophia: no sample quote (only quoted full order of 100)
+Sophia: $58 for 2 samples with laser engraved logo inside. Shipping/delivery TBD.
 
 ### Verdict
 
-**For samples:** Jarry is cheapest at $38. But Nico's samples include laser engraving for $70 (DDP) - you see the finished product, not just a blank ring. That's worth $32 more to know exactly what you're ordering 100 of.
+**For samples:** Jarry is cheapest at $38 but no engraving. Sophia is $58 + shipping with engraving. Nico is $70 all-in (DDP) with engraving. Once Sophia's shipping comes in, she could be the best value for engraved samples.
 
 **For full order:** Jarry and Sophia are basically tied ($943 vs $945). Jarry wins on speed (up to 10 days faster). Nico has no full order quote yet - need to ask.
 
