@@ -4,62 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Puente - Networking made fun again</title>
-  <meta name="description" content="Puente is a ceramic ring that holds your story, your network, and your business. One tap. Any phone. Any language. Networking made fun again." />
-  <meta name="keywords" content="Puente, Puente Ring, networking ring, storytelling ring, business ring, ceramic ring, NFC ring, multilingual" />
-  <meta name="author" content="Puente" />
+  <meta name="description" content="A ceramic ring that makes networking fun again. One tap on any phone. Your socials, your story, your business. In any language." />
   <meta name="theme-color" content="#0A0A0A" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="canonical" href="https://puentering.com" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://puentering.com" />
   <meta property="og:title" content="Puente - Networking made fun again" />
-  <meta property="og:description" content="A ceramic ring that holds your story, your network, and your business. One tap. Any phone. Any language." />
+  <meta property="og:description" content="A ceramic ring that makes networking fun again. One tap. Any phone. Any language." />
   <meta property="og:image" content="https://puentering.com/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Puente" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="es_US" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Puente - Networking made fun again" />
-  <meta name="twitter:description" content="A ceramic ring that holds your story, your network, and your business. One tap. Any phone. Any language." />
-  <meta name="twitter:image" content="https://puentering.com/og-image.png" />
-
-  <!-- Schema.org / Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Puente Ring",
-    "description": "A ceramic ring that holds your story, your network, and your business. One tap. Any phone. Any language. Networking made fun again.",
-    "brand": { "@type": "Brand", "name": "Puente" },
-    "image": "https://puentering.com/og-image.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "49.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/PreOrder",
-      "url": "https://puentering.com"
-    },
-    "material": "Zirconia Ceramic",
-    "category": "Wearable Technology"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Puente",
-    "url": "https://puentering.com",
-    "description": "Networking made fun again. A ring that holds your story, your network, and your business.",
-    "slogan": "Networking made fun again",
-    "foundingDate": "2026"
-  }
-  </script>
 
   <script type="importmap">
     {
@@ -72,7 +24,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -80,7 +32,6 @@
     :root {
       --bg-dark: #0A0A0A;
       --bg-warm: #FAF8F5;
-      --surface: #FFFFFF;
       --text-light: #F5F0EB;
       --text-dim: #8A8580;
       --text-dark: #1A1714;
@@ -92,11 +43,7 @@
       --border: #E8E2DA;
     }
 
-    ::selection {
-      background: var(--accent);
-      color: white;
-    }
-
+    ::selection { background: var(--accent); color: white; }
     html { scroll-behavior: smooth; }
 
     body {
@@ -108,716 +55,469 @@
       line-height: 1.6;
     }
 
-    .serif {
-      font-family: 'Instrument Serif', Georgia, serif;
-    }
-
     /* ===== NAV ===== */
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
       padding: 1.8rem 4rem;
       transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
     nav.scrolled {
       padding: 1rem 4rem;
       background: rgba(10, 10, 10, 0.92);
       backdrop-filter: blur(30px);
-      -webkit-backdrop-filter: blur(30px);
     }
-
     .nav-wordmark {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.4rem;
-      color: var(--text-light);
-      text-decoration: none;
-      letter-spacing: 0.01em;
+      font-family: 'Instrument Serif', serif; font-size: 1.4rem;
+      color: var(--text-light); text-decoration: none;
     }
-
     .nav-cta {
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--bg-dark);
-      background: var(--text-light);
-      text-decoration: none;
-      padding: 0.7rem 1.8rem;
-      border-radius: 100px;
-      border: none;
-      transition: all 0.3s ease;
-      cursor: pointer;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--bg-dark); background: var(--text-light);
+      text-decoration: none; padding: 0.7rem 1.8rem; border-radius: 100px;
+      transition: all 0.3s ease; cursor: pointer;
     }
+    .nav-cta:hover { background: var(--accent); color: white; }
 
-    .nav-cta:hover {
-      background: var(--accent);
-      color: white;
-    }
-
-    /* ===== SCREEN 1: HERO WITH RING ===== */
+    /* ===== HERO ===== */
     .hero {
-      min-height: 100vh;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 6rem 2rem 3rem;
-      position: relative;
+      min-height: 100vh; min-height: 100svh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; padding: 6rem 2rem 3rem; position: relative;
     }
-
     .hero-ring-container {
-      width: 320px;
-      height: 320px;
-      margin-bottom: 2.5rem;
-      position: relative;
-      opacity: 0;
-      animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 0.2s;
+      width: 300px; height: 300px; margin-bottom: 2rem;
+      opacity: 0; animation: fadeIn 1.2s ease forwards 0.2s;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero-ring-canvas {
-      width: 100%;
-      height: 100%;
-      cursor: grab;
-    }
-
-    .hero-ring-canvas:active {
-      cursor: grabbing;
-    }
+    .hero-ring-canvas { width: 100%; height: 100%; cursor: grab; }
+    .hero-ring-canvas:active { cursor: grabbing; }
 
     .hero-tagline {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(2.4rem, 6vw, 4rem);
-      font-weight: 400;
-      line-height: 1.1;
-      color: var(--text-light);
-      margin-bottom: 1.5rem;
-      opacity: 0;
-      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 0.8s;
+      font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 400; line-height: 1.1;
+      color: var(--text-light); margin-bottom: 1.2rem;
+      opacity: 0; animation: fadeInUp 0.8s ease forwards 0.8s;
     }
-
-    .hero-tagline em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    /* Rotating words */
-    .hero-rotating-wrapper {
-      height: 1.6rem;
-      overflow: hidden;
-      display: inline-flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      opacity: 0;
-      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 1.4s;
-    }
-
-    .hero-rotating-label {
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-right: 0.5rem;
-    }
-
-    .hero-rotating-words {
-      position: relative;
-      height: 1.6rem;
-      display: flex;
-      flex-direction: column;
-      animation: rotateWords 6s ease-in-out infinite;
-    }
-
-    .hero-rotating-words span {
-      display: flex;
-      align-items: center;
-      height: 1.6rem;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      white-space: nowrap;
-    }
-
-    @keyframes rotateWords {
-      0%, 20% { transform: translateY(0); }
-      33.33%, 53.33% { transform: translateY(-1.6rem); }
-      66.66%, 86.66% { transform: translateY(-3.2rem); }
-      100% { transform: translateY(0); }
-    }
+    .hero-tagline em { font-style: italic; color: var(--accent); }
 
     .hero-sub {
-      font-size: 1.05rem;
-      font-weight: 300;
-      color: var(--text-dim);
-      max-width: 480px;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
-      opacity: 0;
-      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 1.8s;
+      font-size: 1.05rem; font-weight: 300; color: var(--text-dim);
+      max-width: 440px; line-height: 1.7; margin-bottom: 2.5rem;
+      opacity: 0; animation: fadeInUp 0.8s ease forwards 1.2s;
     }
 
     .hero-cta {
-      opacity: 0;
-      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      animation-delay: 2.2s;
+      opacity: 0; animation: fadeInUp 0.8s ease forwards 1.6s;
     }
 
-    .hero-scroll {
-      position: absolute;
-      bottom: 2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      animation: fadeInUp 1s ease forwards;
-      animation-delay: 2.5s;
+    .hero-scroll-hint {
+      position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      opacity: 0; animation: fadeInUp 1s ease forwards 2.2s;
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
     }
-
+    .hero-scroll-hint span {
+      font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--text-dim);
+    }
     .scroll-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--text-dim);
+      width: 5px; height: 5px; border-radius: 50%; background: var(--text-dim);
       animation: pulse 2.5s ease-in-out infinite;
     }
 
     .btn-main {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      padding: 0.9rem 2.4rem;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 100px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.04em; padding: 0.9rem 2.4rem; background: var(--accent);
+      color: white; border: none; border-radius: 100px; text-decoration: none;
+      cursor: pointer; transition: all 0.3s ease;
     }
-
-    .btn-main:hover {
-      background: var(--accent-soft);
-      transform: translateY(-1px);
-    }
+    .btn-main:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
     .btn-ghost {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 400;
-      color: var(--text-dim);
-      text-decoration: none;
-      cursor: pointer;
-      transition: color 0.3s ease;
-      margin-left: 1rem;
+      font-size: 0.78rem; font-weight: 400; color: var(--text-dim);
+      text-decoration: none; margin-left: 1rem; transition: color 0.3s ease;
     }
-
     .btn-ghost:hover { color: var(--text-light); }
 
-    /* ===== SCREEN 2: THREE PROFILES ===== */
-    .profiles-section {
-      min-height: 100vh;
-      min-height: 100svh;
-      background: var(--bg-warm);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 6rem 2rem;
+    /* ===== DEMO SECTION ===== */
+    .demo-section {
+      padding: 4rem 2rem 6rem;
+      display: flex; flex-direction: column; align-items: center;
+      background: var(--bg-dark);
       position: relative;
     }
 
-    .profiles-header {
-      text-align: center;
-      margin-bottom: 4rem;
+    .demo-intro {
+      text-align: center; margin-bottom: 4rem;
     }
-
-    .profiles-header h2 {
+    .demo-intro h2 {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 400;
-      color: var(--text-dark);
-      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400;
+      color: var(--text-light); margin-bottom: 0.8rem;
+    }
+    .demo-intro h2 em { font-style: italic; color: var(--accent); }
+    .demo-intro p {
+      font-size: 0.95rem; color: var(--text-dim); font-weight: 300;
     }
 
-    .profiles-header h2 em {
-      font-style: italic;
-      color: var(--accent);
+    /* Phone mockup */
+    .demo-stage {
+      position: relative; width: 100%; max-width: 380px;
     }
 
-    .profiles-header p {
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--text-body);
-      max-width: 500px;
-      margin: 0 auto;
+    .phone-mockup {
+      width: 100%; aspect-ratio: 9/17;
+      background: #111; border-radius: 40px;
+      border: 3px solid #333;
+      position: relative; overflow: hidden;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.5);
     }
 
-    .profiles-grid {
-      max-width: 1080px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
+    .phone-notch {
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 120px; height: 28px; background: #111;
+      border-radius: 0 0 18px 18px; z-index: 5;
     }
 
-    .profile-card {
-      background: var(--surface);
-      border-radius: 16px;
-      padding: 2.5rem 2rem;
-      text-align: center;
-      border: 1px solid var(--border);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .profile-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-    }
-
-    .profile-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--accent-bg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      font-size: 1.5rem;
-    }
-
-    .profile-card h3 {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: var(--text-dark);
-      margin-bottom: 0.75rem;
-    }
-
-    .profile-card p {
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: var(--text-body);
-      line-height: 1.7;
-    }
-
-    /* ===== SCREEN 3: HOW IT WORKS - STORY ===== */
-    .story-section {
-      background: var(--bg-dark);
-      padding: 6rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .story-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .story-header h2 {
-      font-family: 'Instrument Serif', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 400;
-      color: var(--text-light);
-      margin-bottom: 1rem;
-    }
-
-    .story-header h2 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .story-header p {
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--text-dim);
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .story-steps {
-      max-width: 700px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .story-step {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.5rem;
-    }
-
-    .step-number {
-      font-family: 'Instrument Serif', serif;
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-      min-width: 2rem;
-    }
-
-    .step-content h3 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--text-light);
-      margin-bottom: 0.3rem;
-    }
-
-    .step-content p {
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: var(--text-dim);
-      line-height: 1.6;
-    }
-
-    /* Voice moment */
-    .voice-moment {
-      max-width: 700px;
-      width: 100%;
-      margin-top: 4rem;
-      padding-top: 3rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-    }
-
-    .voice-wave {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3px;
-      height: 36px;
-      margin-bottom: 1.5rem;
-    }
-
-    .wave-bar {
-      width: 2.5px;
-      border-radius: 2px;
-      background: var(--accent);
-      animation: wave 1.8s ease-in-out infinite;
-    }
-
-    .wave-bar:nth-child(1) { height: 10px; animation-delay: 0s; }
-    .wave-bar:nth-child(2) { height: 18px; animation-delay: 0.08s; }
-    .wave-bar:nth-child(3) { height: 28px; animation-delay: 0.14s; }
-    .wave-bar:nth-child(4) { height: 14px; animation-delay: 0.22s; }
-    .wave-bar:nth-child(5) { height: 24px; animation-delay: 0.28s; }
-    .wave-bar:nth-child(6) { height: 12px; animation-delay: 0.36s; }
-    .wave-bar:nth-child(7) { height: 20px; animation-delay: 0.42s; }
-    .wave-bar:nth-child(8) { height: 30px; animation-delay: 0.5s; }
-    .wave-bar:nth-child(9) { height: 16px; animation-delay: 0.56s; }
-    .wave-bar:nth-child(10) { height: 22px; animation-delay: 0.64s; }
-    .wave-bar:nth-child(11) { height: 10px; animation-delay: 0.7s; }
-    .wave-bar:nth-child(12) { height: 18px; animation-delay: 0.78s; }
-    .wave-bar:nth-child(13) { height: 26px; animation-delay: 0.84s; }
-    .wave-bar:nth-child(14) { height: 14px; animation-delay: 0.9s; }
-
-    .voice-moment blockquote {
-      font-family: 'Instrument Serif', serif;
-      font-size: clamp(1.4rem, 3vw, 2.2rem);
-      font-weight: 400;
-      font-style: italic;
-      line-height: 1.45;
-      color: var(--text-light);
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
-    }
-
-    .voice-who {
-      font-size: 0.85rem;
-      font-weight: 400;
-      color: var(--text-dim);
-    }
-
-    .voice-who strong {
-      font-weight: 500;
-      color: var(--text-light);
-    }
-
-    .voice-langs {
-      margin-top: 0.4rem;
-      font-size: 0.62rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    /* ===== SCREEN 4: THE RING SPECS ===== */
-    .specs-section {
-      background: var(--bg-warm);
-      padding: 6rem 2rem;
-      display: flex;
-      justify-content: center;
-    }
-
-    .ring-stage {
-      max-width: 1080px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .ring-viewer {
-      aspect-ratio: 1;
-      background: var(--bg-warm);
-      border-radius: 16px;
+    .phone-screen {
+      width: 100%; height: 100%;
+      background: #0A0A0A;
+      display: flex; flex-direction: column;
+      padding: 3rem 1.5rem 1.5rem;
       position: relative;
       overflow: hidden;
     }
 
-    .ring-canvas {
-      width: 100%;
-      height: 100%;
-      cursor: grab;
+    /* Tap animation overlay */
+    .tap-prompt {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      z-index: 10;
+      transition: opacity 0.6s ease;
+    }
+    .tap-prompt.hidden { opacity: 0; pointer-events: none; }
+
+    .tap-ring-icon {
+      width: 80px; height: 80px; border-radius: 50%;
+      border: 2px solid var(--accent); position: relative;
+      animation: tapFloat 2s ease-in-out infinite;
+      margin-bottom: 1.5rem;
+    }
+    .tap-ring-icon::after {
+      content: ''; position: absolute; inset: 8px;
+      border-radius: 50%; border: 2px solid var(--accent-soft);
     }
 
-    .ring-canvas:active {
-      cursor: grabbing;
+    .tap-prompt p {
+      font-size: 0.85rem; color: var(--text-dim);
+      animation: tapPulse 2s ease-in-out infinite;
     }
 
-    .ring-content {
-      max-width: 440px;
+    @keyframes tapFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes tapPulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
     }
 
+    /* Ripple effect on tap */
+    .tap-ripple {
+      position: absolute; top: 50%; left: 50%;
+      width: 0; height: 0; border-radius: 50%;
+      background: radial-gradient(circle, rgba(176, 92, 47, 0.3) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      opacity: 0; z-index: 8;
+      pointer-events: none;
+    }
+    .tap-ripple.active {
+      animation: rippleOut 0.8s ease-out forwards;
+    }
+    @keyframes rippleOut {
+      0% { width: 0; height: 0; opacity: 1; }
+      100% { width: 600px; height: 600px; opacity: 0; }
+    }
+
+    /* Profile content - appears after tap */
+    .profile-demo {
+      display: flex; flex-direction: column; height: 100%;
+      opacity: 0; transform: translateY(20px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .profile-demo.visible {
+      opacity: 1; transform: translateY(0);
+    }
+
+    .profile-header {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 1.5rem;
+      opacity: 0; transform: translateY(15px);
+      transition: all 0.6s ease 0.2s;
+    }
+    .profile-demo.visible .profile-header {
+      opacity: 1; transform: translateY(0);
+    }
+
+    .profile-avatar {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: white;
+    }
+
+    .profile-name {
+      font-family: 'Instrument Serif', serif; font-size: 1.3rem;
+      color: var(--text-light); line-height: 1.2;
+    }
+    .profile-location {
+      font-size: 0.72rem; color: var(--text-dim); font-weight: 300;
+    }
+
+    /* Voice player */
+    .profile-voice {
+      background: rgba(176, 92, 47, 0.1); border-radius: 16px;
+      padding: 1.2rem; margin-bottom: 1.2rem;
+      opacity: 0; transform: translateY(15px);
+      transition: all 0.6s ease 0.5s;
+    }
+    .profile-demo.visible .profile-voice {
+      opacity: 1; transform: translateY(0);
+    }
+
+    .voice-label {
+      font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.6rem;
+    }
+
+    .voice-player {
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+
+    .voice-play-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--accent); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s ease; flex-shrink: 0;
+    }
+    .voice-play-btn:hover { transform: scale(1.1); }
+    .voice-play-btn svg { margin-left: 2px; }
+
+    .voice-bars {
+      display: flex; align-items: center; gap: 2px; flex: 1; height: 28px;
+    }
+    .voice-bar {
+      width: 3px; border-radius: 2px; background: var(--accent);
+      opacity: 0.4; transition: all 0.15s ease;
+    }
+    .voice-bars.playing .voice-bar {
+      animation: voiceWave 1.2s ease-in-out infinite;
+    }
+
+    .voice-transcript {
+      font-size: 0.78rem; color: var(--text-dim); font-style: italic;
+      margin-top: 0.6rem; line-height: 1.5;
+      font-family: 'Instrument Serif', serif;
+    }
+    .voice-lang-badge {
+      display: inline-block; font-size: 0.55rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--accent); background: rgba(176,92,47,0.15);
+      padding: 0.15rem 0.5rem; border-radius: 100px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-style: normal;
+    }
+
+    @keyframes voiceWave {
+      0%, 100% { transform: scaleY(0.3); opacity: 0.3; }
+      50% { transform: scaleY(1); opacity: 0.7; }
+    }
+
+    /* Socials */
+    .profile-socials {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      opacity: 0; transform: translateY(15px);
+      transition: all 0.6s ease 0.8s;
+    }
+    .profile-demo.visible .profile-socials {
+      opacity: 1; transform: translateY(0);
+    }
+
+    .social-chip {
+      display: flex; align-items: center; gap: 0.4rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px; padding: 0.5rem 1rem;
+      font-size: 0.72rem; color: var(--text-light); font-weight: 400;
+      transition: all 0.2s ease; cursor: pointer;
+    }
+    .social-chip:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: var(--accent);
+    }
+    .social-chip svg { opacity: 0.7; }
+
+    /* Business */
+    .profile-business {
+      background: rgba(255,255,255,0.04); border-radius: 12px;
+      padding: 1rem; border: 1px solid rgba(255,255,255,0.06);
+      opacity: 0; transform: translateY(15px);
+      transition: all 0.6s ease 1.1s;
+    }
+    .profile-demo.visible .profile-business {
+      opacity: 1; transform: translateY(0);
+    }
+
+    .biz-label {
+      font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.4rem;
+    }
+    .biz-name {
+      font-family: 'Instrument Serif', serif; font-size: 1rem;
+      color: var(--text-light); margin-bottom: 0.2rem;
+    }
+    .biz-desc {
+      font-size: 0.72rem; color: var(--text-dim); font-weight: 300;
+    }
+
+    /* Demo caption below phone */
+    .demo-captions {
+      margin-top: 3rem; text-align: center;
+      max-width: 500px;
+    }
+    .demo-caption {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      color: var(--text-light); line-height: 1.4;
+      opacity: 0; transform: translateY(10px);
+      transition: all 0.6s ease;
+    }
+    .demo-caption.visible { opacity: 1; transform: translateY(0); }
+    .demo-caption em { font-style: italic; color: var(--accent); }
+
+    /* ===== SPECS ===== */
+    .specs-section {
+      background: var(--bg-warm); padding: 6rem 2rem;
+      display: flex; justify-content: center;
+    }
+    .ring-stage {
+      max-width: 1080px; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+    .ring-viewer {
+      aspect-ratio: 1; background: var(--bg-warm);
+      border-radius: 16px; position: relative; overflow: hidden;
+    }
+    .ring-canvas { width: 100%; height: 100%; cursor: grab; }
+    .ring-canvas:active { cursor: grabbing; }
+
+    .ring-content { max-width: 440px; }
     .ring-content h2 {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      font-weight: 400;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--text-dark);
-      margin-bottom: 1.5rem;
+      font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 400;
+      line-height: 1.15; color: var(--text-dark); margin-bottom: 1.5rem;
     }
-
-    .ring-content h2 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
+    .ring-content h2 em { font-style: italic; color: var(--accent); }
     .ring-content p {
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--text-body);
-      line-height: 1.85;
-      margin-bottom: 2.5rem;
+      font-size: 1rem; font-weight: 300; color: var(--text-body);
+      line-height: 1.85; margin-bottom: 2.5rem;
     }
-
     .ring-specs-row {
-      display: flex;
-      gap: 2.5rem;
-      padding-top: 2rem;
+      display: flex; gap: 2.5rem; padding-top: 2rem;
       border-top: 1px solid var(--border);
     }
-
     .ring-spec dt {
-      font-size: 0.58rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.3rem;
+      font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.3rem;
     }
-
     .ring-spec dd {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.05rem;
+      font-family: 'Instrument Serif', serif; font-size: 1.05rem;
       color: var(--text-dark);
     }
 
-    /* ===== SCREEN 5: THE ASK ===== */
+    /* ===== CTA ===== */
     .the-ask {
-      min-height: 100vh;
-      min-height: 100svh;
+      min-height: 100vh; min-height: 100svh;
       background: var(--bg-dark);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 6rem 2rem;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; padding: 6rem 2rem;
     }
-
     .ask-label {
-      font-size: 0.62rem;
-      font-weight: 500;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 2rem;
+      font-size: 0.62rem; font-weight: 500; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 2rem;
     }
-
     .ask-headline {
       font-family: 'Instrument Serif', serif;
-      font-size: clamp(2.5rem, 7vw, 5rem);
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.05;
-      color: var(--text-light);
-      margin-bottom: 1.5rem;
+      font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 400;
+      letter-spacing: -0.02em; line-height: 1.05;
+      color: var(--text-light); margin-bottom: 1.5rem;
     }
-
-    .ask-headline em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
+    .ask-headline em { font-style: italic; color: var(--accent); }
     .ask-sub {
-      font-size: 0.95rem;
-      font-weight: 300;
-      color: var(--text-dim);
-      margin-bottom: 0.5rem;
-      max-width: 400px;
+      font-size: 0.95rem; font-weight: 300; color: var(--text-dim);
+      margin-bottom: 0.5rem; max-width: 400px;
     }
-
     .ask-price {
-      font-family: 'Instrument Serif', serif;
-      font-size: 4rem;
-      font-weight: 400;
-      color: var(--text-light);
-      margin: 2.5rem 0;
+      font-family: 'Instrument Serif', serif; font-size: 4rem;
+      font-weight: 400; color: var(--text-light); margin: 2.5rem 0;
     }
-
     .ask-btn {
-      display: inline-block;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 0.88rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      padding: 1.2rem 4rem;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 100px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
+      display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em;
+      padding: 1.2rem 4rem; background: var(--accent); color: white;
+      border: none; border-radius: 100px; text-decoration: none;
+      cursor: pointer; transition: all 0.3s ease;
     }
-
     .ask-btn:hover {
-      background: var(--accent-soft);
-      transform: translateY(-2px);
+      background: var(--accent-soft); transform: translateY(-2px);
       box-shadow: 0 8px 40px rgba(176, 92, 47, 0.3);
     }
-
     .ask-note {
-      margin-top: 2rem;
-      font-size: 0.72rem;
-      color: var(--text-dim);
-      opacity: 0.6;
+      margin-top: 2rem; font-size: 0.72rem;
+      color: var(--text-dim); opacity: 0.6;
     }
-
     .ask-count {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.72rem;
-      font-weight: 400;
-      color: var(--accent);
-      background: var(--accent-bg);
-      padding: 0.5rem 1.2rem;
-      border-radius: 100px;
-      margin-bottom: 2.5rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; font-weight: 400; color: var(--accent);
+      background: var(--accent-bg); padding: 0.5rem 1.2rem;
+      border-radius: 100px; margin-bottom: 2.5rem;
     }
 
     /* ===== FOOTER ===== */
     footer {
-      padding: 3rem 4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--bg-dark);
+      padding: 3rem 4rem; display: flex; justify-content: space-between;
+      align-items: center; background: var(--bg-dark);
       border-top: 1px solid rgba(255,255,255,0.06);
-      max-width: 1080px;
-      margin: 0 auto;
+      max-width: 1080px; margin: 0 auto;
     }
-
-    .footer-mark {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1rem;
-      color: var(--text-dim);
-    }
-
+    .footer-mark { font-family: 'Instrument Serif', serif; font-size: 1rem; color: var(--text-dim); }
     .footer-link {
-      font-size: 0.7rem;
-      color: var(--text-dim);
-      text-decoration: none;
+      font-size: 0.7rem; color: var(--text-dim); text-decoration: none;
       transition: color 0.3s ease;
-      cursor: pointer;
     }
-
     .footer-link:hover { color: var(--accent); }
 
     /* ===== ANIMATIONS ===== */
-    @keyframes wave {
-      0%, 100% { transform: scaleY(0.4); opacity: 0.35; }
-      50% { transform: scaleY(1.15); opacity: 0.7; }
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 0.8; transform: scale(1.4); }
-    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.4); } }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 1.5rem; }
       nav.scrolled { padding: 1rem 1.5rem; }
-
       .hero { padding: 6rem 1.5rem 3rem; }
-      .hero-ring-container { width: 260px; height: 260px; }
-
-      .profiles-section { padding: 4rem 1.5rem; }
-      .profiles-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-      }
-
-      .story-section { padding: 4rem 1.5rem; }
-
+      .hero-ring-container { width: 240px; height: 240px; }
+      .demo-section { padding: 3rem 1.5rem 5rem; }
+      .demo-stage { max-width: 320px; }
       .specs-section { padding: 4rem 1.5rem; }
-      .ring-stage {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
+      .ring-stage { grid-template-columns: 1fr; gap: 2.5rem; }
       .ring-viewer { max-width: 360px; margin: 0 auto; }
       .ring-content { max-width: 100%; }
       .ring-specs-row { gap: 1.5rem; }
-
       .the-ask { padding: 5rem 1.5rem; }
-
-      footer {
-        padding: 2rem 1.5rem;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
+      footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.75rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -844,124 +544,117 @@
 
     <h1 class="hero-tagline">Networking made <em>fun</em> again.</h1>
 
-    <div class="hero-rotating-wrapper">
-      <span class="hero-rotating-label">A</span>
-      <div class="hero-rotating-words">
-        <span>Storytelling ring.</span>
-        <span>Networking ring.</span>
-        <span>Business ring.</span>
-      </div>
-    </div>
-
-    <p class="hero-sub">Your story. Your network. Your business. All in one ceramic ring. One tap on any phone. In any language.</p>
+    <p class="hero-sub">One ring. One tap. They get the real you - your socials, your business, your story in your own voice. No app needed.</p>
 
     <div class="hero-cta">
-      <a href="#join" class="btn-main">Pre-order your ring</a>
-      <a href="#profiles" class="btn-ghost">See how it works</a>
+      <a href="#join" class="btn-main">Pre-order - $49</a>
+      <a href="#demo" class="btn-ghost">Watch it work</a>
     </div>
 
-    <div class="hero-scroll">
+    <div class="hero-scroll-hint">
+      <span>See the demo</span>
       <div class="scroll-dot"></div>
     </div>
   </section>
 
-  <!-- SCREEN 2: THREE PROFILES -->
-  <section class="profiles-section" id="profiles">
-    <div class="profiles-header">
-      <h2>One ring. <em>Three profiles.</em></h2>
-      <p>Every Puente ring holds three layers of who you are. One tap unlocks all of them.</p>
+  <!-- SCREEN 2: INTERACTIVE DEMO -->
+  <section class="demo-section" id="demo">
+    <div class="demo-intro">
+      <h2>Someone taps your ring. <em>This happens.</em></h2>
+      <p>Tap the phone to see it.</p>
     </div>
 
-    <div class="profiles-grid">
-      <div class="profile-card">
-        <div class="profile-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B05C2F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
-        </div>
-        <h3>Your Story</h3>
-        <p>Speak where you grew up, in your language. AI cleans it up, translates it, and turns it into a journey anyone can experience.</p>
-      </div>
+    <div class="demo-stage">
+      <div class="phone-mockup" id="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen" id="phone-screen">
 
-      <div class="profile-card">
-        <div class="profile-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B05C2F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <h3>Your Network</h3>
-        <p>Instagram. LinkedIn. TikTok. Whatever you use. One tap and your socials pop up instantly. No typing, no searching.</p>
-      </div>
+          <!-- Tap prompt (before tap) -->
+          <div class="tap-prompt" id="tap-prompt">
+            <div class="tap-ring-icon"></div>
+            <p>Tap to connect</p>
+          </div>
 
-      <div class="profile-card">
-        <div class="profile-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B05C2F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <!-- Ripple effect -->
+          <div class="tap-ripple" id="tap-ripple"></div>
+
+          <!-- Profile (after tap) -->
+          <div class="profile-demo" id="profile-demo">
+            <div class="profile-header">
+              <div class="profile-avatar">M</div>
+              <div>
+                <div class="profile-name">Maria Gonzalez</div>
+                <div class="profile-location">Danbury, CT - from Puebla, Mexico</div>
+              </div>
+            </div>
+
+            <div class="profile-voice" id="profile-voice">
+              <div class="voice-label">Her story, in her voice</div>
+              <div class="voice-player">
+                <button class="voice-play-btn" id="voice-play-btn">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="white"><polygon points="3,1 12,7 3,13"/></svg>
+                </button>
+                <div class="voice-bars" id="voice-bars">
+                  <div class="voice-bar" style="height:8px"></div>
+                  <div class="voice-bar" style="height:16px"></div>
+                  <div class="voice-bar" style="height:10px"></div>
+                  <div class="voice-bar" style="height:22px"></div>
+                  <div class="voice-bar" style="height:14px"></div>
+                  <div class="voice-bar" style="height:20px"></div>
+                  <div class="voice-bar" style="height:8px"></div>
+                  <div class="voice-bar" style="height:18px"></div>
+                  <div class="voice-bar" style="height:24px"></div>
+                  <div class="voice-bar" style="height:12px"></div>
+                  <div class="voice-bar" style="height:16px"></div>
+                  <div class="voice-bar" style="height:6px"></div>
+                  <div class="voice-bar" style="height:20px"></div>
+                  <div class="voice-bar" style="height:10px"></div>
+                  <div class="voice-bar" style="height:18px"></div>
+                  <div class="voice-bar" style="height:8px"></div>
+                  <div class="voice-bar" style="height:14px"></div>
+                  <div class="voice-bar" style="height:22px"></div>
+                  <div class="voice-bar" style="height:12px"></div>
+                  <div class="voice-bar" style="height:16px"></div>
+                </div>
+              </div>
+              <p class="voice-transcript">"Soy de Puebla. Vine aqui con mi mama cuando tenia ocho anos. Danbury se convirtio en mi hogar..." <span class="voice-lang-badge">Espanol - tap to translate</span></p>
+            </div>
+
+            <div class="profile-socials">
+              <div class="social-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg>
+                @mariag
+              </div>
+              <div class="social-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                Maria Gonzalez
+              </div>
+              <div class="social-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a8.9 8.9 0 0 1-2.55.7 4.47 4.47 0 0 0 1.96-2.47 8.93 8.93 0 0 1-2.82 1.07A4.46 4.46 0 0 0 11.64 9a12.66 12.66 0 0 1-9.2-4.66 4.46 4.46 0 0 0 1.38 5.95A4.4 4.4 0 0 1 1.8 9.7v.06a4.46 4.46 0 0 0 3.57 4.37 4.48 4.48 0 0 1-2 .08 4.46 4.46 0 0 0 4.16 3.1A8.95 8.95 0 0 1 0 19.54a12.64 12.64 0 0 0 6.84 2"/></svg>
+                @mariagonzalez
+              </div>
+            </div>
+
+            <div class="profile-business">
+              <div class="biz-label">Her business</div>
+              <div class="biz-name">Puebla Kitchen Catering</div>
+              <div class="biz-desc">Authentic Mexican catering for events in the Danbury area. Book at pueblakitchen.com</div>
+            </div>
+          </div>
+
         </div>
-        <h3>Your Business</h3>
-        <p>Your website. Your portfolio. Your services. Share what you do and let people find your work with one tap.</p>
       </div>
+    </div>
+
+    <div class="demo-captions">
+      <p class="demo-caption" id="demo-caption">
+        One tap. <em>Now you know Maria.</em><br>
+        Not her job title. Not her LinkedIn headline. <em>Her.</em>
+      </p>
     </div>
   </section>
 
-  <!-- SCREEN 3: STORY CREATION -->
-  <section class="story-section" id="story">
-    <div class="story-header">
-      <h2>Tell your story. <em>In your language.</em></h2>
-      <p>A grandma should be able to do this. Anyone should be able to tell their story. So we made it dead simple.</p>
-    </div>
-
-    <div class="story-steps">
-      <div class="story-step">
-        <span class="step-number">1</span>
-        <div class="step-content">
-          <h3>Speak where you grew up, in your language.</h3>
-          <p>No typing. No forms. Just talk. Say it in Spanish, Portuguese, Creole, English, whatever you think in.</p>
-        </div>
-      </div>
-      <div class="story-step">
-        <span class="step-number">2</span>
-        <div class="step-content">
-          <h3>AI cleans it up and makes your voice clear.</h3>
-          <p>Cuts the pauses, sharpens the audio. Your words, polished.</p>
-        </div>
-      </div>
-      <div class="story-step">
-        <span class="step-number">3</span>
-        <div class="step-content">
-          <h3>Choose to share it in any language.</h3>
-          <p>Someone who speaks Mandarin can hear your story, even if you told it in Spanish. The bridge goes both ways.</p>
-        </div>
-      </div>
-      <div class="story-step">
-        <span class="step-number">4</span>
-        <div class="step-content">
-          <h3>Pick your sound. Pick your photos.</h3>
-          <p>Choose a background sound for when people listen. Add photos that take them on your journey.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Voice moment -->
-    <div class="voice-moment">
-      <div class="voice-wave">
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-        <div class="wave-bar"></div>
-      </div>
-      <blockquote>"Millions of stories are never told. Yours won't be one of them."</blockquote>
-      <p class="voice-who">Your voice. Their language. <strong>Now they know.</strong></p>
-      <p class="voice-langs">English / Espanol / Portugues / Creole / Any language</p>
-    </div>
-  </section>
-
-  <!-- SCREEN 4: THE RING SPECS -->
+  <!-- SCREEN 3: SPECS -->
   <section class="specs-section" id="ring">
     <div class="ring-stage">
       <div class="ring-viewer" id="ring-viewer">
@@ -971,33 +664,21 @@
         <h2>Built to <em>last.</em></h2>
         <p>Full solid zirconia ceramic. No battery, no charging, no maintenance. Waterproof. Tap it on any phone and it just works. Wear it every day, everywhere.</p>
         <dl class="ring-specs-row">
-          <div class="ring-spec">
-            <dt>Material</dt>
-            <dd>Zirconia Ceramic</dd>
-          </div>
-          <div class="ring-spec">
-            <dt>Battery</dt>
-            <dd>None. Ever.</dd>
-          </div>
-          <div class="ring-spec">
-            <dt>Water</dt>
-            <dd>Fully Sealed</dd>
-          </div>
-          <div class="ring-spec">
-            <dt>Finish</dt>
-            <dd>Brushed Black</dd>
-          </div>
+          <div class="ring-spec"><dt>Material</dt><dd>Zirconia Ceramic</dd></div>
+          <div class="ring-spec"><dt>Battery</dt><dd>None. Ever.</dd></div>
+          <div class="ring-spec"><dt>Water</dt><dd>Fully Sealed</dd></div>
+          <div class="ring-spec"><dt>Finish</dt><dd>Brushed Black</dd></div>
         </dl>
       </div>
     </div>
   </section>
 
-  <!-- SCREEN 5: THE ASK -->
+  <!-- SCREEN 4: CTA -->
   <section class="the-ask" id="join">
     <p class="ask-label">Networking made fun again</p>
-    <h2 class="ask-headline">Your story.<br>Their phone.<br><em>One tap.</em></h2>
-    <p class="ask-sub">Pre-order now. First batch ships soon.</p>
-    <div class="ask-count">Limited first batch - pre-order to reserve yours</div>
+    <h2 class="ask-headline">Be remembered.<br><em>Not just met.</em></h2>
+    <p class="ask-sub">First batch. For people who are done with fake networking.</p>
+    <div class="ask-count">Limited first batch - pre-order to lock in yours</div>
     <div class="ask-price">$49</div>
     <!-- REPLACE WITH SQUARE CHECKOUT LINK -->
     <a href="#" class="ask-btn">Pre-order your ring</a>
@@ -1017,186 +698,176 @@
     }, { passive: true });
   </script>
 
-  <!-- Hero 3D Ring -->
+  <!-- Demo interaction -->
+  <script>
+    const phoneMockup = document.getElementById('phone-mockup');
+    const tapPrompt = document.getElementById('tap-prompt');
+    const tapRipple = document.getElementById('tap-ripple');
+    const profileDemo = document.getElementById('profile-demo');
+    const demoCaption = document.getElementById('demo-caption');
+    const voicePlayBtn = document.getElementById('voice-play-btn');
+    const voiceBars = document.getElementById('voice-bars');
+    let tapped = false;
+    let voicePlaying = false;
+
+    // Tap the phone to trigger demo
+    phoneMockup.addEventListener('click', () => {
+      if (tapped) {
+        // Reset
+        tapped = false;
+        tapPrompt.classList.remove('hidden');
+        profileDemo.classList.remove('visible');
+        demoCaption.classList.remove('visible');
+        voiceBars.classList.remove('playing');
+        voicePlaying = false;
+        return;
+      }
+
+      tapped = true;
+
+      // Ripple
+      tapRipple.classList.remove('active');
+      void tapRipple.offsetWidth;
+      tapRipple.classList.add('active');
+
+      // Hide prompt, show profile
+      tapPrompt.classList.add('hidden');
+
+      setTimeout(() => {
+        profileDemo.classList.add('visible');
+      }, 400);
+
+      setTimeout(() => {
+        demoCaption.classList.add('visible');
+      }, 1400);
+
+      // Auto-play voice bars after profile appears
+      setTimeout(() => {
+        voiceBars.classList.add('playing');
+        voicePlaying = true;
+        // Stop after 4 seconds
+        setTimeout(() => {
+          voiceBars.classList.remove('playing');
+          voicePlaying = false;
+        }, 4000);
+      }, 1200);
+    });
+
+    // Voice play button
+    voicePlayBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      voicePlaying = !voicePlaying;
+      voiceBars.classList.toggle('playing', voicePlaying);
+    });
+
+    // Animate demo into view on scroll
+    const demoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.demo-intro, .demo-stage').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+      demoObserver.observe(el);
+    });
+  </script>
+
+  <!-- 3D Rings -->
   <script type="module">
     import * as THREE from 'three';
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-    // === HERO RING ===
-    const heroCanvas = document.getElementById('hero-ring-canvas');
-    const heroContainer = heroCanvas.parentElement;
-
-    const heroScene = new THREE.Scene();
-    heroScene.background = new THREE.Color(0x0A0A0A);
-
-    const heroCamera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
-    heroCamera.position.set(0, 1.5, 4);
-
-    const heroRenderer = new THREE.WebGLRenderer({
-      canvas: heroCanvas,
-      antialias: true,
-    });
-    heroRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    heroRenderer.toneMapping = THREE.ACESFilmicToneMapping;
-    heroRenderer.toneMappingExposure = 1.2;
-
-    function heroResize() {
-      const w = heroContainer.clientWidth;
-      const h = heroContainer.clientHeight;
-      heroRenderer.setSize(w, h);
-      heroCamera.aspect = w / h;
-      heroCamera.updateProjectionMatrix();
-    }
-    heroResize();
-    window.addEventListener('resize', heroResize);
-
-    heroScene.add(new THREE.AmbientLight(0xffffff, 0.4));
-    const heroKey = new THREE.DirectionalLight(0xffffff, 1.5);
-    heroKey.position.set(3, 5, 4);
-    heroScene.add(heroKey);
-    const heroFill = new THREE.DirectionalLight(0xF5E6D3, 0.6);
-    heroFill.position.set(-3, 2, -2);
-    heroScene.add(heroFill);
-    const heroRim = new THREE.DirectionalLight(0xffffff, 0.8);
-    heroRim.position.set(0, -2, -4);
-    heroScene.add(heroRim);
-
-    const heroControls = new OrbitControls(heroCamera, heroCanvas);
-    heroControls.enableDamping = true;
-    heroControls.dampingFactor = 0.05;
-    heroControls.enableZoom = false;
-    heroControls.enablePan = false;
-    heroControls.autoRotate = true;
-    heroControls.autoRotateSpeed = 3;
-
-    let heroRing = null;
     const loader = new GLTFLoader();
-    loader.load('ring.glb', (gltf) => {
-      heroRing = gltf.scene;
-      const box = new THREE.Box3().setFromObject(heroRing);
-      const center = box.getCenter(new THREE.Vector3());
-      const size = box.getSize(new THREE.Vector3());
-      const maxDim = Math.max(size.x, size.y, size.z);
-      const scale = 2 / maxDim;
-      heroRing.scale.setScalar(scale);
-      heroRing.position.sub(center.multiplyScalar(scale));
 
-      heroRing.traverse((child) => {
-        if (child.isMesh) {
-          child.material = new THREE.MeshPhysicalMaterial({
-            color: 0x1A1714,
-            metalness: 0.1,
-            roughness: 0.45,
-            clearcoat: 0.3,
-            clearcoatRoughness: 0.6,
-            reflectivity: 0.3,
-            envMapIntensity: 0.8,
-          });
-        }
+    function createRingScene(canvasId, containerId, bgColor, autoRotateSpeed) {
+      const canvas = document.getElementById(canvasId);
+      const container = containerId ? document.getElementById(containerId) : canvas.parentElement;
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(bgColor);
+
+      const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+      camera.position.set(0, 1.5, 4);
+
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.2;
+
+      function resize() {
+        const w = container.clientWidth;
+        const h = container.clientHeight;
+        renderer.setSize(w, h);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+      const key = new THREE.DirectionalLight(0xffffff, 1.5);
+      key.position.set(3, 5, 4); scene.add(key);
+      const fill = new THREE.DirectionalLight(0xF5E6D3, 0.6);
+      fill.position.set(-3, 2, -2); scene.add(fill);
+      const rim = new THREE.DirectionalLight(0xffffff, 0.8);
+      rim.position.set(0, -2, -4); scene.add(rim);
+
+      const controls = new OrbitControls(camera, canvas);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.enableZoom = false;
+      controls.enablePan = false;
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = autoRotateSpeed;
+
+      let ring = null;
+      loader.load('ring.glb', (gltf) => {
+        ring = gltf.scene;
+        const box = new THREE.Box3().setFromObject(ring);
+        const center = box.getCenter(new THREE.Vector3());
+        const size = box.getSize(new THREE.Vector3());
+        const scale = 2 / Math.max(size.x, size.y, size.z);
+        ring.scale.setScalar(scale);
+        ring.position.sub(center.multiplyScalar(scale));
+
+        ring.traverse((child) => {
+          if (child.isMesh) {
+            child.material = new THREE.MeshPhysicalMaterial({
+              color: 0x1A1714,
+              metalness: 0.1,
+              roughness: 0.45,
+              clearcoat: 0.3,
+              clearcoatRoughness: 0.6,
+              reflectivity: 0.3,
+              envMapIntensity: 0.8,
+            });
+          }
+        });
+        scene.add(ring);
       });
 
-      heroScene.add(heroRing);
-    });
-
-    let heroTime = 0;
-    function heroAnimate() {
-      requestAnimationFrame(heroAnimate);
-      heroTime += 0.01;
-      if (heroRing) {
-        heroRing.position.y = Math.sin(heroTime * 1.5) * 0.08;
+      let time = 0;
+      function animate() {
+        requestAnimationFrame(animate);
+        time += 0.01;
+        if (ring) ring.position.y = Math.sin(time * 1.5) * 0.08;
+        controls.update();
+        renderer.render(scene, camera);
       }
-      heroControls.update();
-      heroRenderer.render(heroScene, heroCamera);
+      animate();
     }
-    heroAnimate();
 
-    // === SPECS RING ===
-    const specsCanvas = document.getElementById('ring-canvas');
-    const specsContainer = document.getElementById('ring-viewer');
-
-    const specsScene = new THREE.Scene();
-    specsScene.background = new THREE.Color(0xFAF8F5);
-
-    const specsCamera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
-    specsCamera.position.set(0, 1.5, 4);
-
-    const specsRenderer = new THREE.WebGLRenderer({
-      canvas: specsCanvas,
-      antialias: true,
-    });
-    specsRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    specsRenderer.toneMapping = THREE.ACESFilmicToneMapping;
-    specsRenderer.toneMappingExposure = 1.2;
-
-    function specsResize() {
-      const w = specsContainer.clientWidth;
-      const h = specsContainer.clientHeight;
-      specsRenderer.setSize(w, h);
-      specsCamera.aspect = w / h;
-      specsCamera.updateProjectionMatrix();
-    }
-    specsResize();
-    window.addEventListener('resize', specsResize);
-
-    specsScene.add(new THREE.AmbientLight(0xffffff, 0.4));
-    const specsKey = new THREE.DirectionalLight(0xffffff, 1.5);
-    specsKey.position.set(3, 5, 4);
-    specsScene.add(specsKey);
-    const specsFill = new THREE.DirectionalLight(0xF5E6D3, 0.6);
-    specsFill.position.set(-3, 2, -2);
-    specsScene.add(specsFill);
-    const specsRim = new THREE.DirectionalLight(0xffffff, 0.8);
-    specsRim.position.set(0, -2, -4);
-    specsScene.add(specsRim);
-
-    const specsControls = new OrbitControls(specsCamera, specsCanvas);
-    specsControls.enableDamping = true;
-    specsControls.dampingFactor = 0.05;
-    specsControls.enableZoom = false;
-    specsControls.enablePan = false;
-    specsControls.autoRotate = true;
-    specsControls.autoRotateSpeed = 2.5;
-
-    let specsRing = null;
-    loader.load('ring.glb', (gltf) => {
-      specsRing = gltf.scene;
-      const box = new THREE.Box3().setFromObject(specsRing);
-      const center = box.getCenter(new THREE.Vector3());
-      const size = box.getSize(new THREE.Vector3());
-      const maxDim = Math.max(size.x, size.y, size.z);
-      const scale = 2 / maxDim;
-      specsRing.scale.setScalar(scale);
-      specsRing.position.sub(center.multiplyScalar(scale));
-
-      specsRing.traverse((child) => {
-        if (child.isMesh) {
-          child.material = new THREE.MeshPhysicalMaterial({
-            color: 0x1A1714,
-            metalness: 0.1,
-            roughness: 0.45,
-            clearcoat: 0.3,
-            clearcoatRoughness: 0.6,
-            reflectivity: 0.3,
-            envMapIntensity: 0.8,
-          });
-        }
-      });
-
-      specsScene.add(specsRing);
-    });
-
-    let specsTime = 0;
-    function specsAnimate() {
-      requestAnimationFrame(specsAnimate);
-      specsTime += 0.01;
-      if (specsRing) {
-        specsRing.position.y = Math.sin(specsTime * 1.5) * 0.08;
-      }
-      specsControls.update();
-      specsRenderer.render(specsScene, specsCamera);
-    }
-    specsAnimate();
+    // Hero ring (dark bg)
+    createRingScene('hero-ring-canvas', null, 0x0A0A0A, 3);
+    // Specs ring (warm bg)
+    createRingScene('ring-canvas', 'ring-viewer', 0xFAF8F5, 2.5);
   </script>
 
 </body>
